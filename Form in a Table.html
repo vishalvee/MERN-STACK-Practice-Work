@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in Table</title>
+</head>
+<style>
+    table {
+        color: rgb(17, 16, 77);
+        background-color: rgb(211, 194, 138);
+    }
+
+    input {
+        background-color: rgb(245, 244, 226);
+    }
+
+    input:focus {
+        background-color: rgb(247, 232, 214);
+    }
+
+    textarea {
+        background-color: rgb(245, 244, 226);
+    }
+
+    textarea:focus {
+        background-color: rgb(247, 232, 214);
+    }
+
+    select {
+        background-color: rgb(245, 244, 226);
+    }
+
+    select:focus {
+        background-color: rgb(247, 232, 214);
+    }
+</style>
+
+<body>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <form method="post" align="center">
+            <caption>Registration form</caption>
+            <br>
+            <tr>
+                <td><label>Enter your First name</label></td>
+                <td><input type="text" name="1st-name"></td>
+            </tr>
+            <tr>
+                <td><label>Enter your Last name</label></td>
+                <td><input type="text" name="lastname1"></td>
+            </tr>
+            <tr>
+                <td><label>Enter your Password</label></td>
+                <td><input type="password" name="pass"></td>
+
+            </tr>
+            <tr>
+                <td><label>Enter your Email</label></td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><label>Enter your Mobile</label></td>
+                <td><input type="number" name="mobile"></td>
+            </tr>
+            <tr>
+                <td><label>Enter your Address</label></td>
+                <td><textarea name="address"></textarea></td>
+            </tr>
+            <tr>
+                <td><label>Select your Gender</label></td>
+                <td>
+                    <input type="radio" name="gen" value="male">Male
+                    <input type="radio" name="gen" value="Female">FeMale
+                    <input type="radio" name="gen" value="other">Other
+                </td>
+            </tr>
+            <tr>
+                <td><label>Select your Hobbies</label></td>
+                <td>
+                    <input type="checkbox" name="hobby" values="Singing">Singing
+                    <input type="checkbox" name="hobby" values="Dancing">Dancing
+                    <input type="checkbox" name="hobby" values="Editing">Editing
+                    <input type="checkbox" name="hobby" values="Gaming">Gaming
+                </td>
+            </tr>
+            <tr>
+                <td><label>Select your DOB</label></td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            <tr>
+                <td><label>Select your Country</label></td>
+                <td>
+                    <select name="Country">
+                        <option value="India">India</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="China">China</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Upload your Pic</label></td>
+                <td><input type="file" name="pic"></td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">
+                    <input type="submit" name="sbt" value="Save My Data">
+                    <input type="reset" name="rset" value="Reset My Data">
+                </td>
+            </tr>
+
+    </table>
+    </form>
+</body>
+
+</html>
