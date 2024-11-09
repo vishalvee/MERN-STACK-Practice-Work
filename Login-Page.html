@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day02 login form</title>
+    <style>
+
+    h1{
+        margin-top: 4rem;
+        text-align: center;
+        font-family:'Courier New', Courier, monospace;
+        color: #a59718;
+    }
+        table{
+            margin-left: 39%;
+            margin-top: 2%;
+            background-color: #00000063;
+            border-radius: 4%;
+            border:3px solid rgb(190, 186, 181); 
+            padding: 1%;
+        }
+#btn{
+    background-color: rgb(73, 121, 255);
+    padding: 3%;
+    border-radius: 4px;
+}
+#submit{
+    text-decoration: none;
+    background-color: rgb(211, 192, 88);
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    padding: 2%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 5rem;
+    border: 2px solid rgb(255, 255, 255);
+}
+#email1,#pass{
+    background-color:rgba(67, 77, 90, 0.473);
+   color:  rgb(255, 255, 255);
+
+    font-size: 1rem;
+    font-family:'Courier New', Courier, monospace;
+    
+}
+#name{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.479);
+    font-family:'Courier New', Courier, monospace
+}
+
+    </style>
+</head>
+<body>
+    <h1>Login Page-01</h1>
+    <table border="0" cellspacing="0" cellpadding="15">
+        <form action="post">
+            <tr>
+                <td><label for="Email" id="name">Email</label></td>
+                <td><input type="email" name="email" id="email1" placeholder="Enter Email Id"></td>
+            </tr>
+            <tr>
+                <td><label for="password" id="name">Password</label></td>
+                <td><input type="password" name="password" id="pass" placeholder="Enter Password"></td>
+            </tr>
+            <tr align="center" id="log">
+                <td colspan="2" id="btn"><input type="submit" value="LOGIN" id="submit"></td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
