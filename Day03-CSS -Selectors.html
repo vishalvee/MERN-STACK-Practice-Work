@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day03_CSS_Selectors</title>
+    <style>
+
+      /*Element selector*/
+        h1{
+            color: rgb(0, 113, 197);
+        }
+       h2{
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: rgb(101, 49, 113);
+        color: rgb(223, 217, 207);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       }
+       /*Universal selector*/
+        *{
+            background-color: rgb(253, 251, 245);
+            margin:15px;
+            padding: 4px;
+            border: 1px solid rgba(131, 109, 109, 0.233);
+            border-radius: 5px;
+        }
+      /*Grouping Selector*/
+       h1#first,#sec{
+            color: rgba(194, 112, 6, 0.993);
+        }
+        /*Descendant selector*/
+         p span{
+            color: red;
+        }
+        /*Id Selector denote by HASHTAG(#)*/
+         #id1{
+            color: rgb(133, 170, 0);
+            font-size: 40px;
+        }
+        /*Class Selector denote by DOTE(.)*/
+        .class1{
+            color: rgb(20, 155, 72);
+            font-size: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>CSS_SELECTORS</h2>
+    <h1>01.Element Selectors</h1>
+    <h1>02.Universal Selectors (*)</h1>
+    <h1 id="first">03.Grouping Selectors</h1>
+    <p id="sec">This tag is used to show Grouping selector</p>
+    <h1>04.Descendant selector</h1>
+    <p>This is p tag <span>This is span for Descendant selector</span></p>
+    <h1>05.Id (#) and Class (.) Selectors </h1>
+    <p id="id1">This is for id</p>
+    <p class="class1"> This is for class</p>
+</body>
+</html>
