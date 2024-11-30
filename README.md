@@ -7,4 +7,5 @@ Project of My MERNSTACK Journey. <br>
 4.First webpage only with the help of HTML[witout CSS].<br>
 5.Basics of CSS<br>
 6.LoginPage using Html and CSS.<br>
-7.CSS_Selectors.
+7.CSS_Selectors.<br>
+8.CSS-Selectors-Part-02.
