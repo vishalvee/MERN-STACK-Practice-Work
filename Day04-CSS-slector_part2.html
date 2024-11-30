@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_selctors_part02</title>
+    <style>
+        *{
+            background-color: rgb(253, 251, 245);
+            margin: 20px;
+            padding: 5px;
+            border: 1px solid rgba(131, 109, 109, 0.233);
+            border-radius: 5px;
+        }
+         /*child selector tag*/
+         body>span{
+            font-size: 30px;
+            margin-left: 40%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: rgb(101, 49, 113);
+            color: rgb(223, 217, 207);
+         }
+         /*Attribute Selectors*/
+         input[type="text"]{
+            border: 3px solid green;
+         }
+         input[name="pass"]{
+            border: 4px solid rgb(0, 145, 255);
+         }
+         /*Pseudo Class*/
+         a:link{
+            color: red;
+         }
+         a:visited{
+            color: green;
+         }
+         a:active{
+            color: rgb(240, 103, 78);
+         }
+         a:hover{
+            color: rgb(43, 63, 111);
+         }
+         /*Before and After Pseudo Class Denote by (::)*/
+         h1::before{
+            content: "hello";
+            color: red;
+         }
+         h1::after{
+            color: green;
+            content: "how are you";
+         }
+    </style>
+</head>
+<body>
+<!--Child selectors Denote by ( > )-->
+<span>This is child selector</span>
+<br><br><br>
+<!--Attribute Selector Denote by [Type]-->
+ <form action="#">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="" placeholder="this is Attribute Selector ">
+    <label for="password">Password</label>
+    <input type="password" name="pass" id="" placeholder="this is Attribute Selector">
+ </form>
+<!--Pseudo Class Denote by (:)-->
+<a href="D:\MERN STACK COURSE\CSS\Day01-Basic syntax of CSS.html">This is Pseudo Class </a>
+<!--After and Before Denoted by (::)-->
+<h1>Befor and After Pseudo Class </h1>
+</body       
+</html>
