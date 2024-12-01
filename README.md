@@ -8,4 +8,5 @@ Project of My MERNSTACK Journey. <br>
 5.Basics of CSS<br>
 6.LoginPage using Html and CSS.<br>
 7.CSS_Selectors.<br>
-8.CSS-Selectors-Part-02.
+8.CSS-Selectors-Part-02.<br>
+9.CSS-Border-Style-Properties.
