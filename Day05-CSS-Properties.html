@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css-Border-Style-Properties</title>
+    <!--Border-Style Propertie-->
+    <style>
+        /*01-Solid*/
+        /*📌NOTE:- The Borders are placed clockwise:Top First, then Right,Bottom,and Finally Left Side 
+        (if we use 4 border-style at same time)*/
+        div{
+            margin-left: 5%;
+            margin-right: 5%;
+            padding:2%;
+            font-size:150%;
+            color: rgb(193, 59, 126);
+            text-align: center;
+        }
+        #d1{
+            border-style: solid;
+        }
+        #d2{
+            border-style: dotted;
+        }
+        #d3{
+            border-style:dotted solid ;
+        }
+        #d4{
+            border-style: double;
+        }
+        #d5{
+            border-style:dotted solid double ;
+        }
+        #d6{
+            border-style:dashed;
+        }
+        #d7{
+            border-style: dotted solid double dashed;
+        }
+        #d8{
+            border-style: groove;
+        }
+        #d9{
+            border-style: inset;
+        }
+        #d10{
+            border-style: outset;
+        }
+        #d11{
+            border-style: ridge;
+        }
+        /*Border_width_Property*/
+        /*Width in Length*/
+        #d12{
+            border-style:solid;
+            border-width: 15px;
+        }
+        /*Thin Width*/
+        #d13{
+            border-style:solid;
+            border-width:thin;
+        }
+        /*Medium Width (always set default width size)*/
+        #d14{
+            
+            border-style:solid;
+            border-width: medium;
+        }
+        /*Thick Width*/
+        #d15{
+            border-style:solid;
+            border-width: thick;
+        }
+        /*Initial Width*/
+        #d16{
+            border-style:solid;
+            border-width: initial;
+        }   
+       /*SIX types of Border_width_Values*/
+       /*Top-Width*/
+       #d17{
+        border: 1px solid;
+        border-top-width: 5px;
+       }
+       /*Bottom-Width*/
+       #d18{
+        border: 1px solid;
+        border-bottom-width: 5px;
+       }
+       /*Left-Width*/
+       #d19{
+        border: 1px solid;
+        border-left-width: 5px;
+       }
+       /*Right-Width*/
+       #d20{
+        border: 1px solid;
+        border-right-width: 5px;
+       }
+       /*Block-Width*/
+       #d21{
+        border: 1px solid;
+        border-block-width: 15px;
+       }
+       /*Inline_Width*/
+       #d22{
+        border: 1px solid;
+        border-inline-width: 15px;
+       }
+
+    </style>
+</head>
+<body>
+    <!--📌01-Border-Style Properties-->
+    <h1 style="color: rgb(140, 174, 29); text-align: center;">01 Border_Style_Property</h1>
+   <div id="d1">solid</div>
+   <br><br><br><br>
+   <div id="d2">dotted</div>
+    <br><br><br><br>
+   <div id="d3">dotted solid</div>
+   <br><br><br><br>
+   <div id="d4">double</div>
+   <br><br><br><br>
+   <div id="d5">dotted solid double</div>
+   <br><br><br><br>
+   <div id="d6">dashed</div>
+   <br><br><br><br>
+   <div id="d7">dotted solid double dashed</div>
+   <br><br><br><br>
+   <div id="d8">Groove</div>
+   <br><br><br><br>
+   <div id="d9">inset</div>
+   <br><br><br><br>
+   <div id="d10">outset</div>
+   <br><br><br><br>
+   <div id="d11">Ridge</div>
+   <br><br><br><br><br>
+<!--📌02 Border_width_Property -->
+   <h1 style="color: rgb(140, 174, 29); text-align: center;">02 Border_width_Property</h1>
+   <div id="d12">Width in Lenght</div>
+   <br><br>
+   <div id="d13">Width in Thin</div>
+   <br><br>
+   <div id="d14">Width in Medium</div>
+   <br><br>
+   <div id="d15">Width in Thick</div>
+   <br><br>
+   <div id="d16">Width in Initial</div>
+   <!--📌03 SIX types of Border_width_Property_Values -->
+   <h1 style="color: rgb(140, 174, 29); text-align: center;">03 SIX types of Border_width_Property_Values</h1>
+    <br>
+    <div id="d17">Top-Width</div>
+    <br><br>
+    <div id="d18">Bottom-Width</div>
+    <br><br>
+    <div id="d19">Left-Width</div>
+    <br><br>
+    <div id="d20">Right-Width</div>
+    <br><br>
+    <div id="d21">Block-Width</div>
+    <br><br>
+    <div id="d22">Inline_Width</div>
+</body>
+</html>
