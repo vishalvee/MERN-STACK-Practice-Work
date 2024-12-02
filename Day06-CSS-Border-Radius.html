@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-Radius</title>
+    <style>
+        div{
+            padding: 2%;
+            text-align: center;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        h1,p{
+            margin-left: 5%; 
+        }
+        /*Border-Radius*/
+        #d1{
+            border: 2px solid red;
+            border-radius:13px;
+        }
+        #d2{
+            border: 2px double green;
+            border-top-left-radius:30px ;
+        }
+        #d3{
+            border: 3px dotted blue;
+            border-top-right-radius: 40px;
+        }
+        #d4{
+            border: 3px solid brown;
+            border-bottom-left-radius: 40px;
+        }
+        #d5{
+            border: 3px solid goldenrod;
+            border-bottom-right-radius: 40px;
+        }
+        #d6{
+            border: 3px solid rgb(62, 184, 143);
+            border-top-left-radius:40px;
+            border-top-right-radius:40px ;
+        }
+        #d7{
+            border: 3px solid rgb(62, 184, 143);
+            border-bottom-left-radius:40px;
+            border-bottom-right-radius:40px ;
+        }
+
+        /*Border-Color*/
+        #d8{
+            border: 23px solid gray;
+            border-top-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            border-top-color: red;
+            border-left-color:green;
+            border-right-color:blue ;
+            border-bottom-color: rgb(241, 207, 32);
+        }
+        /*Out-line (same as Border, outline bhi apply hoti hai)*/
+        #d9{
+            outline: 5px solid rgb(76, 192, 30);
+            outline-style:dashed;
+            border: 8px groove;
+            border-top-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            border-top-color: red;
+            border-left-color:green;
+            border-right-color:blue ;
+            border-bottom-color: rgb(241, 207, 32);
+        }
+       
+    </style>
+</head>
+<body>
+    <!--📌Boder-radius-->
+    <h1>01 Border-Radius</h1>
+    <div id="d1">Border-radius</div>
+    <br><br>
+    <div id="d2">Border-top-left-radius</div>
+    <br><br>
+    <div id="d3">Border-top-right-radius</div>
+    <br><br>
+    <div id="d4">Border-bottom-left-radius</div>
+    <br><br>
+    <div id="d5">Border-bottom-right-radius</div>
+    <br><br>
+    <div id="d6">top-left,right-radius</div>
+    <br><br>
+    <div id="d7">bottom-left,right-radius</div>
+    <br><br><br>
+    <!--📌Boder-Color-->
+    <h1>02 Border-Color</h1>
+    <p>border-{left,right,top,bottom}-color</p>
+    <div id="d8">Bolder-color-on-four-side</div>
+    <br><br>
+    <!--📌Outline-->
+    <h1>03 Outline</h1>
+    <p>outline use same as border properties (Outline=Border)</p>
+    <div id="d9">Outline-outside-the-boder</div>
+</body>
+</html>
