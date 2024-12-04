@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-Properties-Part02</title>
+    <style>
+        * {
+            margin-left: 1%;
+        }
+
+        #head {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            word-spacing: 20px;
+            color: rgb(87, 176, 64);
+            padding: 2%;
+            background-color: wheat;
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #p1 {
+            color: red;
+            text-decoration: underline;
+        }
+
+        #p2 {
+            color: green;
+            text-decoration: overline;
+        }
+
+        #p3 {
+            color: blue;
+            text-decoration: line-through;
+        }
+
+        #p4 {
+            text-decoration: none;
+        }
+
+        #p5 {
+            color: rgb(198, 209, 37);
+            text-shadow: 2px 3px green;
+            font-size: 25px;
+        }
+
+        #p6 {
+            color: orangered;
+            text-shadow: 2px 1px 2px gray;
+            font-size: 25px;
+        }
+
+        #p7 {
+            white-space: normal;
+        }
+
+        #p8 {
+            white-space: pre;
+        }
+
+        #p9 {
+            white-space: nowrap;
+        }
+
+        tr {
+            background-color: yellowgreen;
+        }
+
+        #t1 {
+            vertical-align: top;
+        }
+
+        #t2 {
+            vertical-align: middle;
+        }
+
+        #t2 {
+            vertical-align: bottom;
+        }
+
+        #t4 #s1 {
+            vertical-align: super;
+        }
+
+        #t5 #s2 {
+            vertical-align: sub;
+        }
+
+        #d1 {
+            border: 2px solid red;
+            background-color: goldenrod;
+            color: white;
+            width: 250px;
+            height: 200px;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 id="head">Text-Properties-Part02</h3>
+    <h1 id="head1">08 Text-Decoration</h1>
+    <p id="p1">1.underline</p>
+    <p id="p2">2.overline</p>
+    <p id="p3">3.line-through</p>
+    <a href="#" id="p4">4.none (Here i use link tag)</a>
+    <br>
+    <hr>
+    <br>
+    <h1 id="head2">09 Text-Shadow</h1>
+    <p>Use 2 values (For horizontal/vertical shadow)</p>
+    <p id="p5">TWO VALUES</p>
+    <p>Use 3 values (For horizontal/vertical and opacity)</p>
+    <p id="p6">THREE VALUES</p>
+    <hr>
+    <h1 id="head3">10 White-Space</h1>
+    <p id="p7">This is nornal tag</p>
+    <p id="p8">This is for pre</p>
+    <p id="p9">This is for NOWRAP Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum vitae qui quasi,
+        excepturi consequatur eum culpa eaque dicta, ad, quisquam consectetur numquam rem. Fugiat enim provident,
+        corporis aliquam temporibus quo.
+    </p>
+    <hr>
+    <h1 id="head4">11 Vertical-Align</h1>
+    <table border="1px" cellspacing="0px" cellpadding="15px">
+        <tr>
+            <td id="t1">For-Top</td>
+            <td id="t2">For-Middel</td>
+            <td id="t3">For-Bottom</td>
+            <td id="t4">12<span id="s1">th</span> (For-Sup)</td>
+            <td id="t5">H<span id="s2">2</span>O (For-Sub)</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <h1 id="head5">12 Overflow</h1>
+    <p id="p11">01 Hidden overflow</p>
+    <p id="p12">02 Scroll overflow</p>
+    <p id="p13">03 Auto overflow</p>
+    <div id="d1">
+        <p id="10">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quo facilis consequatur debitis temporibus a iure harum fugiat nam id asperiores laboriosam beatae,
+            sunt corrupti cupiditate expedita tempore quos totam et? Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Ut illo, commodi asperiores reiciendis libero sequi. Laboriosam,
+            voluptatem quisquam soluta voluptates repellat alias esse laborum fugiat cum sunt eum nulla. Corrupti.</p>
+    </div>
+
+</body>
+
+</html>
