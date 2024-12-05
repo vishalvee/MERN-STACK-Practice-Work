@@ -12,5 +12,5 @@ Project of My MERNSTACK Journey. <br>
 9.CSS-Border-Style-Properties.<br>
 10.CSS-Borde-Radius,Color and Outline.<br>
 11.CSS-Text-Properties.<br>
-12.CSS-Text-Properties-Part02.
-
+12.CSS-Text-Properties-Part02.<br>
+13.CSS-Basic_Resume.
