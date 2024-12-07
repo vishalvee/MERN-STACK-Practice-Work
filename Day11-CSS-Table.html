@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Table</title>
+    <style>
+        * {
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+        /*For header*/
+        #title {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            word-spacing: 20px;
+            color: rgb(255, 255, 255);
+            padding: 2%;
+            background-color: rgb(71, 159, 241);
+            font-size: 30px;
+        }
+        /*Title*/
+        h1 {
+            color: rgb(223, 189, 40);
+        }
+
+        /*Table-Styling-Properties*/
+        /*-------------------------------*/
+        /*01 BORDER-STLYE*/
+        table,th,td{
+            border: solid;
+        }
+        /*02 BORDER-SPACING*/
+        table{
+            border-spacing: 10px;
+        }
+        /*03 CAPTION-SIDE (by default on TOP)*/
+        table{
+            caption-side: bottom;
+        }
+        /*04 BORDER-COLLAPSE*/
+        table{
+            border-collapse: collapse;
+        }
+        /*05 WIDTH AND HEIGHT*/
+        table{
+            width: 98%;
+            height: 100%;
+        }
+        /*06 BORDER-BOTTOM*/
+        th,td{
+            border-bottom:double;
+        }
+        /*07 HEADING-IN-DIFFRENT-COLOR*/
+        th{
+            background-color: green;
+        }
+        /*08 HOVER-EFFECT*/
+        tr:hover{
+            background-color: rgb(223, 189, 40);
+        } 
+        /*09 STRIPERD-EFFECT (like zebracrosing[odd/even])*/
+        tr:nth-child(odd){
+            background-color:  orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="title">CSS-Table-Style</h2>
+    <h1>CSS-TABLE</h1>
+    <table>
+        <caption>(Student List)</caption>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Course</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Vee</td>
+            <td>HTML</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Max</td>
+            <td>CSS</td>
+        </tr>
+    </table>
+</body>
+
+</html>
