@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-01-BootStrap</title>
+    <link rel="stylesheet" href="..//Bootstrap-Software/css/bootstrap.css"><!--BootStrap04 Css file-->
+    <style>
+        h1{
+            text-align: center;
+            background-color: rgb(149, 59, 233);
+            color: #fff;
+            padding: 1%;
+            margin-bottom: 3%;
+        }
+    </style>
+</head>
+<body>
+    <!--Note : 
+        -----------------------------
+        1.'Col' = columun
+        2.'md' = medium-device
+        3.'12' = full column in a row
+    -->
+    <h1>Basics-of-Bootstrap</h1>
+    <div class="container-fluid"><!--Use class "container-fluid" for full [100%] width of Div (otherwise its set to default by "container" [80% width])-->
+        <div class="row">
+            <!--For multiple  lines write all Div in single child "row class"-->
+            <div class="col-md-12" style="border: 2px solid ;"><!--Here 12 is value of 'Numbers-of-Columns' in a single ROW -->
+                1
+            </div>
+            <div class="col-md-6" style="border: 2px solid red;"><!--Here row is divided into Two part by give value 6 ('[total col-no=12] Divide-By [how many no,of-col we want in a row]')-->
+                2
+            </div>
+            <div class="col-md-6" style="border: 2px solid red;">
+                3
+            </div>
+            <div class="col-md-4" style="border: 2px solid green;">
+                4
+            </div>
+            <div class="col-md-4" style="border: 2px solid green;">
+                5
+            </div>
+            <div class="col-md-4" style="border: 2px solid green;">
+                6
+            </div>
+            <div class="col-md-6" style="border: 2px solid red;">
+                7
+            </div>
+            <div class="col-md-6" style="border: 2px solid red;">
+                8
+            </div>
+            <div class="col-md-12" style="border: 2px solid rgb(0, 0, 0);">
+                9
+            </div>
+        </div>
+    </div>
+</body>
+</html>
