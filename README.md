@@ -17,4 +17,5 @@ Project of My MERNSTACK Journey. <br>
 14.CSS-Measurements And Font-Properties.<br>
 15.CSS-Table-Style-Properties.<br>
 16.CSS-Table-Assignment.<br>
-17.CSS-Margin-Padding-Assignment.
+17.CSS-Margin-Padding-Assignment.<br>
+18.Day15-CSS-Proprties.
