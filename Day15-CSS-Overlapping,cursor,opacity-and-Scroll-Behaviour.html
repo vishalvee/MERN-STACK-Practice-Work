@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPecity,cursor,opacity and scroll-behaviour</title>
+    <style>
+        *{
+            margin: 1%;
+
+        }
+        /*Scroll-Behaviour (Always apply on HTML tag)*/
+        html {
+            scroll-behavior: smooth;
+        }
+        #title{
+            background-color: rgb(255, 166, 0);
+            padding: 1%;
+            text-align: center;
+            letter-spacing: 6px;
+        }
+        h1 {
+            text-decoration: underline;
+        }
+
+        /*Overlapping (1 and -1 is used)*/
+        img {
+            position: absolute;
+            z-index: 1;
+            /*(+ve) value for TOP*/
+            width: 100px;
+            height: 100px;
+        }
+
+        /*Opacity (between 0 to 0.9)*/
+        span {
+            color: rgb(9, 73, 9);
+            font-size: 30px;
+            opacity: 0.5;
+            /*opacity*/
+        }
+
+        /*Cursor*/
+        #sp1:hover {
+            font-size: 30px;
+            color: rgb(255, 166, 0);
+            cursor: crosshair;
+            /*Cursor change into crosshair (Aim symbol)*/
+        }
+
+        #p1 {
+            font-size: 40px;
+            margin-left: 45%;
+            color: purple;
+            text-shadow: 2px 2px 3px red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="title">Day15-CSS-Properties</h2>
+    <h1>01-Overlapping</h1>
+    <div id="d1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam facere illum unde illo nemo maiores
+        voluptates rerum quaerat dolores officiis at sed ad vel, adipisci voluptatem, culpa nisi corporis quasi!</div>
+    <img src="man.png" alt="">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eligendi reprehenderit voluptatibus odio possimus.
+        Voluptates ipsa ipsum, ex deserunt culpa aliquam neque, recusandae dolorem assumenda aspernatur, ea quaerat
+        dolores veritatis!</p>
+    <br><br><br><br>
+    <hr>
+    <h1>02-Opacity</h1>
+    <span>This is for Opecity</span>
+    <hr>
+    <h1>03-Cursor</h1>
+    <div id="d2">
+        <p id="sp1">Point Your Mouse Cursor</p>
+    </div>
+    <hr>
+    <h1>04-Scroll-Behavior</h1>
+    <a href="#p1">Go Down</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p id="p1">Hello Ji</p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>
