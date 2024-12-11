@@ -22,7 +22,8 @@
 11.CSS-Table-Style-Properties.<br>
 12.CSS-Table-Assignment.<br>
 13.CSS-Margin-Padding-Assignment.<br>
-14.Day15-CSS-Proprties.
+14.Day15-CSS-Proprties.<br>
+15.Day16-CSS-Display-Properties.
 <hr>
 3️⃣BOOT-STRAP
 <hr>
