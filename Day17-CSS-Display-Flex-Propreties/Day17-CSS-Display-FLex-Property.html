@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display-Part-02</title>
+    <style>
+        #title{
+            background-color: rgb(108, 72, 190);
+            padding: 1%;
+            text-align: center;
+            letter-spacing: 6px;
+            color: white;
+        }
+        #d1{
+            border: 3px solid green;
+            background-color: olivedrab;
+            display: flex;
+            padding: 3px;
+        }
+        #d2,#d3{
+            width: 100px;
+            height: 100px;
+            background-color: aliceblue;
+            border: 2px solid gray;
+            padding: 3%;
+        }
+        #d3{
+            margin-left: 30px;
+           
+        }
+        #d4{
+            display: none;
+            width: 100px;
+            height: 100px;
+            background-color: aliceblue;
+            border: 2px solid gray;
+            padding: 3%;
+        }
+        #d5{
+            visibility: hidden;
+            width: 100px;
+            height: 100px;
+            background-color: aliceblue;
+            border: 2px solid gray;
+            padding: 3%;
+        }
+        /*Display-flex*/
+        #flex-container{
+            background-color: wheat;
+            border: 3px solid saddlebrown;
+             /*Display-flex*/
+             display: flex;
+        }
+        .one{
+            width: 50px;
+            height: 50px;
+            background-color: aliceblue;
+            border: 2px solid gray;
+            padding: 3%;
+        
+        }
+        /*Flex-Direction*/
+        #flex-direction{
+            background-color: rgb(134, 92, 15);
+            border: 3px solid rgb(214, 177, 150);
+             /*Flex-Direction*/
+             flex-direction: column;
+             display: flex;
+        }
+        /*Flex-Direction-col-reverse*/
+        #flex-direction2{
+            background-color: rgb(12, 44, 35);
+            border: 3px solid rgb(214, 177, 150);
+             /*Flex-Direction*/
+             flex-direction:column-reverse;
+             display: flex;
+        }
+         /*Flex-Direction-col-reverse*/
+         #flex-direction3{
+            background-color: rgb(75, 77, 184);
+            border: 3px solid rgb(214, 177, 150);
+             /*Flex-Direction*/
+             flex-direction:row;
+             display: flex;
+        }
+         /*Flex-Direction-col-reverse*/
+         #flex-direction4{
+            background-color: rgb(235, 93, 57);
+            border: 3px solid rgb(214, 177, 150);
+             /*Flex-Direction*/
+             flex-direction:row-reverse;
+             display: flex;
+        }
+        
+     /*Flex-Direction-col-reverse*/
+     #flex-direction5{
+            background-color: rgb(204, 20, 51);
+            border: 3px solid rgb(214, 177, 150);
+             /*Flex-Direction*/
+             flex-wrap: wrap;
+             display: flex;
+        }
+         /*Flex-Direction-col-reverse*/
+         #flex-direction6{
+            background-color: rgb(178, 205, 207);
+            border: 3px solid rgb(214, 177, 150);
+             /*Flex-Direction*/
+             flex-wrap: nowrap;
+             display: flex;
+        }
+         /*Flex-Direction-col-reverse*/
+         #flex-direction7{
+            background-color: rgb(14, 21, 37);
+            border: 3px solid rgb(214, 177, 150);
+             /*Flex-Direction*/
+             flex-wrap: wrap-reverse;
+             display: flex;
+        }
+         
+        h4{
+            margin-left: 1%;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="title">Day17-CSS-Display-Flex-Properties</h2>
+    <h1>01-Display-None/Visibility-Hidden</h1>
+    <div id="d1">
+        <div id="d2"> Display-none</div>
+        <div id="d3">2-Visibility-Hidden</div>
+    </div>
+    <div id="d1">
+        <div id="d4"> Display-none</div>
+        <div id="d5">2-Visibility-Hidden</div>
+    </div>
+    <hr>
+<h1>02-Flex-Properties</h1>
+<div id="flex-container">
+    <div class="one">Item01</div>
+    <div class="one">Item02</div>
+    <div class="one">Item03</div>
+</div>
+<hr>
+<h1>02-Flex-Direction</h1>
+<h4>i-Flex-Direction-Column</h4>
+<div id="flex-direction">
+    <div class="one">Item01</div>
+    <div class="one">Item02</div>
+    <div class="one">Item03</div>
+</div>
+
+<h4>ii-Flex-Direction-Column-reverse</h4>
+<div id="flex-direction2">
+    <div class="one">Item01</div>
+    <div class="one">Item02</div>
+    <div class="one">Item03</div>
+</div>
+<h4>iii-Flex-Direction-row</h4>
+<div id="flex-direction3">
+    <div class="one">Item01</div>
+    <div class="one">Item02</div>
+    <div class="one">Item03</div>
+</div>
+<h4>iv-Flex-Direction-row-reverse</h4>
+<div id="flex-direction4">
+    <div class="one">Item01</div>
+    <div class="one">Item02</div>
+    <div class="one">Item03</div>
+</div>
+
+<h4>v-Flex-Wrap</h4>
+<div id="flex-direction5">
+    <div class="one">Item01</div>
+    <div class="one">Item02</div>
+    <div class="one">Item03</div>
+    <div class="one">Item04</div>
+    <div class="one">Item05</div>
+    <div class="one">Item06</div>
+    <div class="one">Item07</div>
+    <div class="one">Item08</div>
+    <div class="one">Item09</div>
+</div>
+
+<h4>vi-Flex-Nowrap</h4>
+<div id="flex-direction6">
+    <div class="one">Item01</div>
+    <div class="one">Item02</div>
+    <div class="one">Item03</div>
+    <div class="one">Item04</div>
+    <div class="one">Item05</div>
+    <div class="one">Item06</div>
+    <div class="one">Item07</div>
+    <div class="one">Item08</div>
+    <div class="one">Item09</div>
+</div>
+<h4>vii-Flex-Wrap-Reverse</h4>
+<div id="flex-direction7">
+    <div class="one">Item01</div>
+    <div class="one">Item02</div>
+    <div class="one">Item03</div>
+    <div class="one">Item04</div>
+    <div class="one">Item05</div>
+    <div class="one">Item06</div>
+    <div class="one">Item07</div>
+    <div class="one">Item08</div>
+    <div class="one">Item09</div>
+</div>
+
+</body>
+</html>

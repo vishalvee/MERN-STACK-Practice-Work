@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display-Justify-Content</title>
+    <style>
+
+
+/*NOTE:- Always use Display:flex before the justify-content property*/
+        #title{
+            background-color: rgb(108, 72, 190);
+            padding: 1%;
+            text-align: center;
+            letter-spacing: 6px;
+            color: white;
+        }
+       
+        #d2,#d3{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid rgb(0, 0, 0);
+            padding: 3%;
+        }
+        #d3{
+            margin-left: 30px;
+           
+        }
+        #d4{
+            display: none;
+            width: 100px;
+            height: 100px;
+            background-color: aliceblue;
+            border: 2px solid gray;
+            padding: 3%;
+        }
+        #d5{
+            visibility: hidden;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid gray;
+            padding: 3%;
+        }
+         /*01 justify-content-center*/
+         #d1{
+            border: 3px solid rgb(137, 138, 221);
+            background-color: rgb(51, 19, 102);
+            display: flex;
+            padding: 3px;
+            /*center*/
+            justify-content: center;
+        }
+        
+         /*02 flex-start*/
+        #flex-container1{
+            background-color: rgb(190, 16, 68);
+            border: 3px solid rgb(252, 144, 3);
+             /*Display-flex*/
+             display: flex;
+            /*flex-start*/
+            justify-content: flex-start;
+        }
+         /*03 flex-end*/
+        #flex-container2{
+            background-color: rgb(17, 113, 143);
+            border: 3px solid rgb(252, 144, 3);
+             /*Display-flex*/
+             display: flex;
+              /*flex-end*/
+            justify-content: flex-end;
+        }
+        /*04 Space-around*/
+        #flex-container3{
+            background-color: rgb(207, 80, 41);
+            border: 3px solid rgb(252, 144, 3);
+             /*Display-flex*/
+             display: flex;
+             /*space-around*/
+             justify-content: space-around;
+        }
+        /*05-Space-Between*/
+        #flex-container4{
+            background-color: rgb(29, 71, 13);
+            border: 3px solid rgb(252, 144, 3);
+             /*Display-flex*/
+             display: flex;
+             /*space-between*/
+             justify-content: space-between;
+        }
+
+        .one{
+            width: 50px;
+            height: 50px;
+            background-color: rgb(251, 253, 249);
+            border: 2px solid rgb(0, 0, 0);
+            padding: 3%;
+        
+        }
+         
+        h4{
+            margin-left: 1%;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="title">Day17-CSS-Display-Justify-Content-Properties</h2>
+    <h1>01-Justify-content-Center</h1>
+    <div id="d1">
+        <div id="d2">Item1</div>
+        <div id="d3">Item2</div>
+    </div>
+    <hr>
+<h1>02-Justify-flex-start</h1>
+<div id="flex-container1">
+    <div class="one">Item01</div>
+    <div class="one">Item02</div>
+    <div class="one">Item03</div>
+</div>
+<hr>
+<h1>03-Justify-flex-end</h1>
+<div id="flex-container2">
+    <div class="one">Item01</div>
+    <div class="one">Item02</div>
+    <div class="one">Item03</div>
+</div>
+<hr>
+<h1>04-Justify-flex-Space-Around</h1>
+<div id="flex-container3">
+    <div class="one">Item01</div>
+    <div class="one">Item02</div>
+    <div class="one">Item03</div>
+</div>
+<hr>
+<h1>05-Justify-flex-Space-Between</h1>
+<div id="flex-container4">
+    <div class="one">Item01</div>
+    <div class="one">Item02</div>
+    <div class="one">Item03</div>
+</div>
+<hr>
+
+</div>
+</body>
+</html>
