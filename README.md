@@ -23,7 +23,8 @@
 12.CSS-Table-Assignment.<br>
 13.CSS-Margin-Padding-Assignment.<br>
 14.CSS-Proprties.<br>
-15.CSS-Display-Properties.
+15.CSS-Display-Properties.<br>
+16.CSS-Display-Flex-And-Justify-Content-Property.
 <hr>
 3️⃣BOOT-STRAP
 <hr>
