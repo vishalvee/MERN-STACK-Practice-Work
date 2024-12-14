@@ -29,4 +29,5 @@
 <hr>
 3️⃣BOOT-STRAP
 <hr>
-1.Day01-Basics-of-BootStrap.<br>
+1.Basics-of-BootStrap.<br>
+2.BS-Table-Assignment.
