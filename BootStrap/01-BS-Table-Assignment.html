@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table-01</title>
+    <link rel="stylesheet" href="../../Bootstrap-Software/css/bootstrap.css">
+    <style>
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            color: rgb(125, 65, 204);
+            font-family: arial;
+            font-size: 20px;
+            margin-top: 2%;
+        }
+
+        #find {
+            width: 100%;
+            
+            height: 40px;
+        }
+
+        /*Search-Icon*/
+        #d1 {
+            display: flex;
+        }
+        #d1 #search-icon {
+            width: 40px;
+            height: 40px;
+            background-color: rgb(212, 95, 197);
+        }
+
+/*tr:nth-child(even) {
+            background-color: rgb(221, 219, 215);
+        }
+    */
+
+        table {
+            width: 90%;
+           
+            border-spacing: 0px;
+        }
+
+        th,
+        tr {
+            text-align: left;
+            height: 40px;
+            font-family: arial;
+        }
+
+        td,
+        th {
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Search WithIn Table</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="d1">
+                    <input type="search" name="search" id="find" placeholder="Search something here...">
+                    <a href="#"><img src="search-icon.png" alt="" srcset="" id="search-icon"></a>
+                </div>
+                <div id="d2">
+                    <table class="table table-striped table-green">
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Vee</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Raka</td>
+                        <td>Thomton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Max</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Meddy</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Rocky</td>
+                        <td>Thomton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Koko</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+            </table>
+        </div>
+     </div>
+    </div>
+    </div>  
+</body>
+</html>
