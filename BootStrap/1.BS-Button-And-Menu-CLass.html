@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button-Class</title>
+    <link rel="stylesheet" href="../../../Bootstrap-Software/css/bootstrap.css">
+</head>
+<style>
+    p{
+        color: rgb(118, 91, 34);
+        text-align: center;
+        font-size: 30px;
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
+    #p2{
+        color: rgb(34, 118, 73);
+        text-align: center;
+        font-size: 30px;
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
+    #d1{
+        background-color: beige;
+        padding: 2%;
+    }
+    #d3{
+        background-color: rgb(213, 234, 213);
+        padding: 2%;
+    }
+    #menu3{
+        font-size: 40px;
+        padding: 4px;
+       
+    }
+   
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12" >
+                <p>Types of button</p>
+                <hr>
+                <div id="d1">
+                1
+                <a class="btn btn-default" href="#" >Default-Link</a>
+                2
+                <button class="btn btn-default" type="submit">Button</button>
+                3
+                <input type="button" class="btn-btn-default" value="input">
+                4
+                <input type="submit" class="btn-btn-default" value="submit">
+                <hr>
+                
+                <div id="d2">
+                <h4>02-Different-Button-Colors</h4>
+                <br>
+                <button type="button" class="btn btn-default">Default</button>
+                <button type="button" class="btn btn-primary">BLue</button>
+                <button type="button" class="btn btn-success">Green</button>
+                <button type="button" class="btn btn-info">Ocean-Blue</button>
+                <button type="button" class="btn btn-warning">Yellow</button>
+                <button type="button" class="btn btn-danger">Red</button>
+                <button type="button" class="btn btn-link">Link</button>
+                <hr>
+                <h4>03-Different-Button-Sizes</h4>
+                <br>
+                <button type="button" class="btn btn-primary btn-lg">Large-Button</button>
+                <button type="button" class="btn btn-success">Default-Button</button>
+                <button type="button" class="btn btn-info btn-sm">Samll-Button</button>
+                <button type="button" class="btn btn-danger btn-xs">Extra-Small-Button</button>
+                <br>
+               
+            </div>
+            </div>
+            <hr>
+            <!--02-Menu-Classes-->
+            <div class="col-md-12" >
+                <p id="p2">
+                    Menu Classes
+                </p>
+                <hr>
+                <div id="d3">
+                    <ul class="nav nav-tabs">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">MENU</a></li>
+                        <li class="active"><a href="#">MENU-02</a></li>
+                        <li><a href="#">MENU-03</a></li>
+                    </ul>
+                    <br>
+                <!--Nav-Pills-->
+                    <hr>
+                    <div class="col-md-12" >
+                        <ul class="nav-nav-pills">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Menu 01</a></li>
+                        <li><a href="#">Menu 02</a></li>
+                        <li><a href="#">Menu 03</a></li>
+                        </ul>
+                </div>
+                <!--Pagination-->
+               <hr>
+               <div class="col-md-12" id="menu3">
+                <ul class="pagination">
+                    <li><a href="#">1</a></li>
+                    <li class="active"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                </ul>
+            </div>
+            <!--Pager-->
+            <hr>
+            <div class="col-md-12" >
+             <ul class="pager">
+                 <li><a href="#">1-Previous</a></li>
+                 <li><a href="#">2-Next</a></li>
+             </ul>
+         </div>
+         <hr>
+         <!--Drop-Dow-->
+         <div class="col-md-12" id="menu4">
+            <ul class="nav nav-pills">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Dropdown Content</a></li>
+                        <li><a href="#">Dropdown Content</a></li>
+                        <li><a href="#">Dropdown Content</a></li>
+                    </ul>
+                </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            
+        </ul>
+        </div>
+        <!--Glyphicon-->
+        <div class="col-md-12">
+            <span class="glyphicon glyphicon-user"></span>
+            <br>
+            <button><span class="glyphicon glyphicon-user"></span>Button</button>
+        </div>
+    </div>  
+   
+
+
+</body>
+</html>
