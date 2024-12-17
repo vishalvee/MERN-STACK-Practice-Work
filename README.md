@@ -26,6 +26,7 @@
 15.CSS-Display-Properties.<br>
 16.CSS-Display-Flex,Justify-Content,And-Align-Item-Properties.<br>
 17.CSS-Flex-Item-Properties.<br>
+18.CSS-Navigation-Bar-Assignment.
 <hr>
 3️⃣BOOT-STRAP
 <hr>
