@@ -35,5 +35,6 @@
 2.BS-Table-Assignment.<br>
 3.BS-Button-And-Menu-CLasses.<br>
 4.BS-Alert-Class.<br>
-5.BS-Jumbotron-Class.
+5.BS-Jumbotron-Class.<br>
+6.BS-Progress-Bar-Classes.
 
