@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brick-Game-using-Animation-Properties</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+           
+        }
+        body{
+            background-color: rgb(204, 252, 223);
+        }
+        h1{
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            color: white;
+            background: url(bg.jpg);
+            height: 6rem;
+            text-align: center;
+            padding-top:3rem;
+            text-shadow: 2px 2px rgb(81, 145, 201);
+        }
+        .container{
+            border: 15px groove rgb(210, 180, 10);
+            width: 20%;
+            height: 25rem;
+            background: url(bg.jpg);
+            margin-left: 37rem;
+            margin-top: 5rem;
+            border-radius: 10px;
+        }
+        .d1{
+            margin-top: 5%;
+            width: 90px;
+            height: 20px;
+            background:linear-gradient( rgb(85, 149, 94), rgb(65, 96, 76));
+            animation-name: bar;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            border-radius: 30px;
+            /* outline: 2px solid rgb(252, 252, 252); */
+            filter: drop-shadow(3px 1px 10px rgb(185, 208, 243));
+        }
+        /* animation */
+        @keyframes bar{
+            from{
+                margin-left: 0%;
+            }
+            to{
+                margin-left: 70%;
+            }
+        }
+
+        /* Ball-Animation */
+        .ball{
+            width: 20px;
+            height: 20px;
+            border-radius: 80px;
+            background:linear-gradient(rgb(255, 64, 0),rgb(175, 34, 10));
+            animation-name: ball;
+            animation-delay: 2s;
+            animation-duration: 2s;
+            animation-direction:alternate-reverse;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            position: absolute;
+            filter: drop-shadow(3px 3px 5px red);
+        }
+        @keyframes ball{
+            0%{
+                margin-top: 90px;
+            }
+            30%{
+                margin-bottom: 80px;
+            
+        }
+        70%{
+            margin-left: 80px;
+        }
+        100%{
+            margin-right: 100px;
+        }
+    }
+
+    /* brick */
+    .brick{
+        width: 6px;
+        height: 80px;
+        background: rgb(98, 48, 19);
+        margin-top: 4rem;
+        border-radius: 25px;
+    }
+    .brick2{
+        width: 8px;
+        height: 50px;
+        background: rgb(98, 48, 19);
+        margin-top: -8rem;
+        border-radius: 25px;
+        margin-left: 6rem;
+    }
+
+    #sound{
+        width:7%;
+        margin-left: 44.5rem;
+        margin-top: -40px;
+        text-decoration: none;
+        filter: drop-shadow(2px -2px 15px rgb(162, 140, 14));
+        height: 25px;
+        
+    }
+
+    </style>
+</head>
+<body>
+    <!--@Copyright_Vishal_Vee -->
+    <h1>css brick breaker</h1>
+    <div class="container">
+        <div class="d1"></div>
+        <div class="ball"></div>
+        <div class="brick"></div>
+        <div class="brick2"></div>
+    </div>
+    <audio controls autoplay id="sound">
+        <source src="sound.mp3">
+    </audio>
+ 
+   
+</body>
+</html>
