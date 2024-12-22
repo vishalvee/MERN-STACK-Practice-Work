@@ -28,7 +28,8 @@
 17.CSS-Flex-Item-Properties.<br>
 18.CSS-Navigation-Bar-Assignment.<br>
 19.CSS-Fa_Fa-Icon.<br>
-20.CSS-Transform-Property.
+20.CSS-Transform-Property.<br>
+21.CSS-Animation-Property-[Brick-Game].
 <hr>
 3️⃣BOOT-STRAP
 <hr>
