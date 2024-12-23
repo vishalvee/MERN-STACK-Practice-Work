@@ -38,5 +38,6 @@
 3.BS-Button-And-Menu-CLasses.<br>
 4.BS-Alert-Class.<br>
 5.BS-Jumbotron-Class.<br>
-6.BS-Progress-Bar-Classes.
+6.BS-Progress-Bar-Classes.<br>
+7.BS-Modal-Class
 
