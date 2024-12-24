@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear-Gradient</title>
+    <style>
+        *{
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #heading{
+            padding: 2%;
+            background-image: linear-gradient(rgb(255, 0, 242),rgb(144, 0, 255));
+            font-size: 25px;
+            color: white;
+            letter-spacing: 6px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        .d1{
+            width: 200px;
+            height: 200px;
+            background-image: linear-gradient(red 9%,rgb(255, 251, 0) 50%,rgb(9, 159, 6)90%);
+        }
+        .d2{
+            margin-top: 4px;
+            width: 200px;
+            height: 200px;
+            background-image: radial-gradient(red,yellow,green);
+        }
+        .d3{
+            margin-top: 4%;
+            width: 200px;
+            height: 200px;
+            background-image: radial-gradient(red 15%,green 60%,blue 99%);
+        }
+        .d4{
+            margin-top: 4%;
+            width: 200px;
+            height: 200px;
+            background-image:conic-gradient(from 45deg,rgb(48, 188, 234) 40deg,rgb(102, 0, 128),rgb(255, 0, 195),red,yellow);
+            border-radius: 50%;
+            
+        }
+        .d5{
+            margin-top: 4%;
+            width: 400px;
+            height: 200px;
+           background-image: repeating-conic-gradient(yellow 10%,red 20%);
+        }
+      
+    </style>
+</head>
+<body>
+    <h1 id="heading">CSS-Gradients-property</h1>
+    <h1>01 Linear-gradient</h1>
+    <div class="d1"></div>
+    <h1>02 Radial-gradient</h1>
+    <div class="d2"></div>
+    <div class="d3"></div>
+    <h1>03 Conical-gradient</h1>
+    <div class="d4"></div>
+    <h1>04 reapeted</h1>
+    <div class="d5"></div>
+    
+</body>
+</html>
