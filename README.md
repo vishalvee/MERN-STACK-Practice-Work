@@ -29,7 +29,8 @@
 18.CSS-Navigation-Bar-Assignment.<br>
 19.CSS-Fa_Fa-Icon.<br>
 20.CSS-Transform-Property.<br>
-21.CSS-Animation-Property-[Brick-Game].
+21.CSS-Animation-Property-[Brick-Game].<br>
+22.CSS-Gradient-Properties,And Indian-Flag-Project.
 <hr>
 3️⃣BOOT-STRAP
 <hr>
@@ -39,5 +40,5 @@
 4.BS-Alert-Class.<br>
 5.BS-Jumbotron-Class.<br>
 6.BS-Progress-Bar-Classes.<br>
-7.BS-Modal-Class
+7.BS-Modal-Class.
 
