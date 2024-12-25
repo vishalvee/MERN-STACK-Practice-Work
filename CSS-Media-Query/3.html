@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-Media-Query-Assignment</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+        h1{
+            background-color: rgb(247, 0, 0);
+            color: #fff;
+            padding: 3%;
+            letter-spacing: 6px;
+            font-size: 30px;
+            text-transform: uppercase;
+            text-align: center;
+
+        }
+        .main-container{
+            margin-top: 2%;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+        }
+        .d1{
+            margin-top: 10px;
+            width: 300px;
+            height: 200px;
+            border: 5px solid rgb(156, 138, 138);
+        }
+        #d1{
+           
+            background-color: red;
+        }
+        #d2{
+           
+            background-color: rgb(255, 251, 0);
+        }
+        #d3{
+           
+            background-color: rgb(27, 17, 17);
+        }
+       
+        @media screen and (min-width:250px) and (max-width:600px){
+            .main-container{
+                flex-direction: column;
+            }
+        }
+        @media screen and (min-width:601px) and (max-width:900px){
+            .main-container{
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>@Media-Query-Assignment</h1>
+    <div class="main-container">
+        <div class="d1" id="d1"></div>
+        <div class="d1" id="d2"></div>
+        <div class="d1" id="d3"></div>
+    </div>
+</body>
+</html>

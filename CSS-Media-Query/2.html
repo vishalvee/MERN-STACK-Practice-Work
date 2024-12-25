@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media-query-assignment</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        h1{
+            background-color: rgb(110, 110, 217);
+            color: #fff;
+            padding: 3%;
+            letter-spacing: 6px;
+            font-size: 30px;
+            text-transform: uppercase;
+            text-align: center;
+
+        }
+        .d1{
+            margin-top: 1%;
+            width: 100%;
+            height: 100vh;
+            background-color: green;
+        }
+        @media screen and (min-width: 300px) AND (max-width: 600px){
+
+                .d1{
+                    background-color: blue;
+                    color: red;
+                }
+        }
+        
+        @media screen and (min-width:601px) and (max-width:800px){
+            .d1{
+                background-color: rgb(186, 110, 249);
+                font-size: 50px;
+            }
+        }
+        
+        @media screen and (min-width:801px) and (max-width:1200px){
+            .d1{
+                background-color:pink;
+                border: 3px solid red;
+                color: #fff;
+            }
+        }
+        
+
+        
+    
+
+    </style>
+</head>
+<body>
+    <h1>@Media-Query-Assignment</h1>
+    <div class="d1">Vishal-Vee</div>
+</body>
+</html>
