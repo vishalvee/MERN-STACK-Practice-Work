@@ -41,5 +41,6 @@
 4.BS-Alert-Class.<br>
 5.BS-Jumbotron-Class.<br>
 6.BS-Progress-Bar-Classes.<br>
-7.BS-Modal-Class.
+7.BS-Modal-Class.<br>
+8.BS-Form-Class.
 
