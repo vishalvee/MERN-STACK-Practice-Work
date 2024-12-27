@@ -42,5 +42,6 @@
 5.BS-Jumbotron-Class.<br>
 6.BS-Progress-Bar-Classes.<br>
 7.BS-Modal-Class.<br>
-8.BS-Form-Class.
+8.BS-Form-Class.<br>
+9.BS-Card-Class.
 
