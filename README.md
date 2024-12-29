@@ -44,5 +44,6 @@
 6.BS-Progress-Bar-Classes.<br>
 7.BS-Modal-Class.<br>
 8.BS-Form-Class.<br>
-9.BS-Card-Class.
+9.BS-Card-Class.<br>
+10.BS-Navigation-Classes.
 
