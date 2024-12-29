@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <link rel="stylesheet" href="../../bootstrap-4.0.0-dist/css/bootstrap.css">
+    <script src="../../jquery2/jquery2/jquery.js"></script>
+    <script src="../../bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+    <style>
+            a {
+            color: rgb(238, 216, 216); /* Change this to your desired color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-md bg-danger navbar-dark">
+                    <a href="#" class="navbar-brand">Speed</a>
+                    <ul class="navbar nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">project</a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a href="#" class="nav-link dropdown-toggle" id="nav-drop" data-toggle="dropdown">City</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Chandigarh</a>
+                                <a class="dropdown-item" href="#">Haryana</a>
+                                <a class="dropdown-item" href="#">U.P</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
