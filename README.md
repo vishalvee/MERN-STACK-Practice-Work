@@ -32,7 +32,8 @@
 21.CSS-Animation-Property-[Brick-Game].<br>
 22.CSS-Gradient-Properties,And Indian-Flag-Project.<br>
 23.CSS-Media-Query-And-Assignment.<br>
-24.CSS-Card-Using-FLex-Property.
+24.CSS-Card-Using-FLex-Property.<br>
+25.CSS-Gradient-Thumbnail-Project.
 <hr>
 3️⃣BOOT-STRAP
 <hr>
