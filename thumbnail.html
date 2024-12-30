@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Gradient-Thumbnail-Project</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        @font-face{
+            font-family: myfont;
+            src: url(../../../PROJECT/varsity_2/varsity_regular.ttf);
+
+        }
+
+        body{
+            width: 100%;
+            height: 100vh;
+            background-image: repeating-conic-gradient(rgb(255, 255, 255) 0deg 12deg,rgb(219, 195, 9) 13deg 20deg ,#06038D 21deg 30deg);
+            overflow: hidden;
+            font-family: myfont;
+         
+        }
+        .d1 img{
+            width:110%;
+            height: 750px;
+            box-shadow: rgba(0, 0, 0, 0.9);
+            filter: drop-shadow(5px -8px #e3a403);
+            filter: saturate(4px);
+
+        }
+        .container{
+            display: flex;
+            justify-content: space-around;
+            font-size: 70px;
+           overflow: hidden;
+        }
+        .container h1{
+            margin-top: 10%;
+            color: #fff200;
+            filter: drop-shadow(4px 4px 4px rgb(8, 19, 67));
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 5px;
+            text-shadow: 10px 5px  red;
+            margin-left: 5%;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container"><h1>youtube <br> thumbnail <br> design</h1>
+    <div class="d1">
+        <img src="man.png" alt="" srcset="">
+    </div>
+    </div>
+   
+  
+</body>
+</html>
