@@ -48,4 +48,5 @@
 9.BS-Card-Class.<br>
 10.BS-Navigation-Classes.<br>
 11.BS-version-5.
+12.BS-Version-5-Part-02.
 
