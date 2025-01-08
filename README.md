@@ -54,4 +54,5 @@
 <hr>
 4️⃣JAVA-SCRIPT
 <hr>
-1.Basic-of-JavaScript.
+1.Basic-of-JavaScript.<br>
+2.Data-Type-And-Functions.
