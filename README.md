@@ -55,4 +55,5 @@
 4️⃣JAVA-SCRIPT
 <hr>
 1.Basic-of-JavaScript.<br>
-2.Data-Type-And-Functions.
+2.Data-Type-And-Functions.<br>
+3.Object-Data-Type.
