@@ -56,4 +56,5 @@
 <hr>
 1.Basic-of-JavaScript.<br>
 2.Data-Type-And-Functions.<br>
-3.Object-Data-Type.
+3.Object-Data-Type.<br>
+4.Types-of-JS-Functions.
