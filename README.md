@@ -58,4 +58,5 @@
 2.Data-Type-And-Functions.<br>
 3.Object-Data-Type.<br>
 4.Types-of-JS-Functions.<br>
-5.Fuction Inside the Function.
+5.Fuction Inside the Function.<br>
+6.POPUP-in-JS.
