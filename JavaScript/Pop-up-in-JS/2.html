@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert</title>
+    <script>
+        // -1 get user from user
+// ------------------------------------------------------------
+     function ab(){
+          alert('Successfuly Submitted!');
+            var mn=document.vee.name.value;
+             alert(mn);
+            var passw=document.vee.email.value;
+            alert(passw);
+                }
+        // -2 if condition ke saath form validation 
+
+            // function ab() {
+            //     var xyz=document.vee.name.value;
+            //     if(xyz==""){
+            //         alert("Bhai name to dale le!");
+            //     }
+            //     else{
+            //         var xyz=document.vee.email.value;
+            //         alert("Sakshi Kya dekh rhi ho??");
+            //     }
+            // }
+
+        
+    </script>
+</head>
+<body>
+    <form action="" name="vee">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="enter your name">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="" placeholder="enter your email">
+        <label for="pass">Password</label>
+        <input type="password" name="pass" id="" placeholder="enter sahi password">
+        <input type="button" value="sumbit" onclick="ab()">
+
+    </form>
+</body>
+</html>
