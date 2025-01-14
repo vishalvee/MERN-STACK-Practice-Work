@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day-07</title>
+    <script>
+      function ab() {
+        var name1 = document.getElementById("name1").value;
+        var name2 = document.getElementById("name2").value;
+        var name3 = document.getElementById("name3").value;
+        // alert (name1);
+        if (name1 == "") {
+          alert("he student kuch to dal");
+        }
+        alert("Name:"+name1+"Email:"+name2+"Pass"+name3);
+      }
+    </script>
+  </head>
+  <body>
+    <form action="" name="vee">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name1" placeholder="Fist name" />
+      <label for="email">Email</label>
+      <input type="email" name="email" id="name2" />
+      <label for="pass">Password</label>
+      <input type="password" name="pass" id="name3" />
+      <input type="button" value="submit" onclick="ab()" />
+    </form>
+  </body>
+</html>

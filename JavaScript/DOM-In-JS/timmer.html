@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 10%;
+            height: 300px;
+            border: 3px solid rgb(93, 8, 69);
+        }
+    </style>
+    <script>
+        //Time in dom 
+        function ab(){
+        // First making Date as Object
+        var a=new Date();
+        //2.Build-in Class for Time
+        var tm= a.toLocaleTimeString();
+        document.getElementById("div1").innerHTML=tm;
+        // alert (tm);
+        setInterval(function(){ab()},1000);
+        }
+    </script>
+</head>
+<body>
+    <div class="main" id="div1"></div>
+    <button type="button" onclick="ab()">Click</button>
+</body>
+</html>
