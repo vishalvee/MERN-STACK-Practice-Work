@@ -60,5 +60,6 @@
 4.Types-of-JS-Functions.<br>
 5.Fuction Inside the Function.<br>
 6.POPUP-in-JS.<br>
-7.Dom-In-Js-Part-01.
+7.Dom-In-Js-Part-01.<br>
+8.Date,Time-and-Timmer-In-DOM-JS
 
