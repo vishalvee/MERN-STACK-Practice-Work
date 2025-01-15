@@ -49,8 +49,9 @@
 10.BS-Navigation-Classes.<br>
 11.BS-version-5.<br>
 12.BS-Version-5-Part-02.<br>
-13.BS-Version-5-part-03.<br>
-14.BS-Version-05.04<br>
+13.BS-Version-5-Part-03.<br>
+14.BS-Version-05-Part-04.<br>
+15.Trying-Responsive-Page-Using-BS.
 <hr>
 4️⃣JAVA-SCRIPT
 <hr>
