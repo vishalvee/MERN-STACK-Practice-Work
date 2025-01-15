@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="../Bootstrap/bootstrap-4.0.0-dist/css/bootstrap.css">
+    <script src="../Bootstrap/bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+    <script src="../Bootstrap/jquery2/jquery2/jquery.js"></script>
+    <link rel="shortcut icon" href="../MSI.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+
+    /* Navigation Bar */
+    .header-1 {
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        font-family: 'Arial', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-1 ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .header-1 ul li {
+        padding: 0 15px;
+    }
+
+    .header-1 ul li a {
+        text-decoration: none;
+        color: rgb(10, 9, 9);
+        font-size: 18px;
+    }
+
+    .header-1 ul li a:hover {
+        background-color: #DBFF6B;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    #logo {
+        font-size: 24px;
+        color: rgb(226, 19, 19);
+    }
+
+    /* Contact Form */
+    .main-div1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .div2 {
+        flex: 1 1 48%;
+        padding: 10px;
+    }
+
+    .div2 h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    #form-block input,
+    #form-block textarea {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    #form-block .btn {
+        display: block;
+        width: 100%;
+        background-color: #DBFF6B;
+        border: none;
+        color: black;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .con-img img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    /* Footer Section */
+    .contact1 {
+        padding: 20px;
+    }
+
+    .g1 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .t1 {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .g3 {
+        margin-top: 20px;
+    }
+
+    .t3 h2 {
+        font-size: 1.5rem;
+    }
+
+    .t4 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #email-feild {
+        flex: 1 1 auto;
+        margin-bottom: 10px;
+    }
+
+    .t4 .btn {
+        flex: 1 1 auto;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .header-1 ul {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .main-div1 {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .div2 {
+            flex: 1 1 100%;
+        }
+
+        #form-block .btn {
+            padding: 10px;
+        }
+
+        .t1,
+        .g1 {
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .header-1 ul li {
+            padding: 10px 0;
+        }
+
+        .div2 h1 {
+            font-size: 1.8rem;
+        }
+
+        .t3 h2 {
+            font-size: 1.2rem;
+        }
+
+        #form-block input,
+        #form-block textarea {
+            font-size: 14px;
+        }
+    }
+</style>
+<body>
+    <!-- Navbar -->
+    <div class="header-1">
+        <nav class="navbar">
+            <a href="#" id="logo">Vishal-Vee</a>
+            <ul>
+                <li><a href="./vee-2-boot.html">Location</a></li>
+                <li><a href="#">Fitness</a></li>
+                <li><a href="./vee-3-boot.html">About</a></li>
+                <li><a href="./vee4.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="main-div1">
+        <div class="div2">
+            <h1>Contact</h1>
+            <p>Whether you want to book a court, join a class, or inquire about personalized coaching, fill out the form and we’ll get back to you as soon as possible.</p>
+            <form id="form-block">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Phone">
+                <textarea rows="3" placeholder="Message"></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+        <div class="con-img">
+            <img src="./Project-Img/our-project-img/contact.jpg" alt="Contact">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="contact1">
+        <div class="g1">
+            <div class="t1">
+                <h2>Elysian Tennis Camps</h2>
+                <p>From coast to coast: Uncover our 4 tennis camp locations.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
