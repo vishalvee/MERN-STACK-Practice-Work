@@ -63,5 +63,6 @@
 6.POPUP-in-JS.<br>
 7.Dom-In-Js-Part-01.<br>
 8.Date,Time-and-Timmer-In-DOM-JS.<br>
-9.DOM-Properties-In-JS.
+9.DOM-Properties-In-JS.<br>
+10.Selectors-In-DOM.
 
