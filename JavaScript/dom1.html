@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selection in dom</title>
+    </head>
+    <style>
+        *{
+            margin: 8px;
+            padding: 4px;
+        }
+    </style>
+<body>
+    <h1>This is h1-1</h1>
+    <h1>This is h1-2</h1>
+    <hr>
+    <h2 id="i1">this is for id-1</h2>
+    <h2 class="class">this is for class</h2>
+    <hr>
+    <div class="d1">Change-Html</div>
+<script>
+        // selection-of-an-element
+
+        var a=document.getElementById("i1");
+        console.log(a);
+        var b= document.getElementsByClassName("class");
+        console.log(b);
+        var c=document.querySelector("h1");
+        console.log(c);
+        var d=document.querySelectorAll("h1")
+        console.log(d)
+
+        //For-Change html
+        var change=document.querySelector("div")
+
+        console.log(change)
+        //isme tag work krta hai / agar koi html tag use krna hai,Tab ".innerHTML" use hota hai.
+        change.innerHTML="<h1>After HTML Changes Applied!</h1>"
+
+        //For-Change-Styling
+
+        change.style.color="red";
+        change.style.backgroundColor="black";
+        change.style.fontSize="40px"
+
+        //--For-Text-Printing
+        var h=document.getElementById("i1");
+        h.textContent="THIS IS TEXT-CONTENT"
+        h.textContent="<h1>Print SAME TEXT in THIS TEXT-CONTENT</h1>"
+
+
+    </script>
+</body>
+</html>
