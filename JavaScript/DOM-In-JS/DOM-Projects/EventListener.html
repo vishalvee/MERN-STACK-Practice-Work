@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(BULB)-Events-in-DOM</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        #d2{
+            background-color: #ffeac4;;
+            width: 100px;
+            height: 100px;
+            border-radius: 90px;
+            position: relative;
+            top: -60px;
+            left: 21px;
+        }
+        .d6{
+            background-color: #ffffff;
+            width: 95px;
+            height: 115px;
+            border-radius: 84px;
+            position: relative;
+            top: -391px;
+            left: 101px;
+        }
+
+        #erase{
+            top: -507px;
+            left: -53px;
+        }
+        .d3{
+            background-color: rgb(86, 86, 86);
+            width: 80px;
+            height: 100px;
+            border-radius: 25px;
+            position: relative;
+            top: -75px;
+            left: 30px;
+
+        }
+        .d4{
+            background-color: rgb(133, 132, 132);
+            width: 80px;
+            height: 10px;
+            border-radius: 5px;
+            position: relative;
+            top: -155px;
+            left: 30px;
+        }
+        .conector{
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            width: 100px;
+            height: 100px;
+            top: -143px;
+            left: 20px;
+        }
+        .d5{
+            background-color: rgb(74, 74, 74);
+            width: 10px;
+            height: 20px;
+            border-radius: 0px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+           
+        }
+        #bar{
+            margin-top: 10px;
+        }
+
+        #btn{
+            padding: 72px 20px;
+            background-color: rgb(123, 122, 120);
+            color: #ffffff;
+            border-radius: 5px;
+            position: relative;
+            top: -537px;
+            left: 263px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 600;
+
+}
+.socket{
+    width: 90px;
+    height: 60px;
+    padding: 50px 20px;
+    background-color: rgb(123, 122, 120);
+    color: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    top: -701px;
+    left: 335px;
+    border: 2px solid black;
+}
+#big-holl{
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: -848px;
+    left: 24rem;
+}
+.holls{
+    width: 28px;
+    height: 27px;
+    background-color: rgb(78, 75, 75);
+    border-radius: 80px;
+    position: relative;
+    top: -52rem;
+    left: 24.5rem;
+    border: 3px solid #9e9797;
+    
+}   
+.buttom-holls{
+    display: flex;
+    position: absolute;
+    left: -60px;
+    top: 69rem;
+    justify-content: space-evenly;
+    width: 19%;
+}
+
+#btmholls{
+    display: flex;
+    position: relative;
+    top: 47px;
+    left: -129px;
+    justify-content: space-between;
+    width: 108px;
+}
+
+
+.wire{
+    position: relative;
+    width: 80%;
+    height: 50px;
+    /* background-color: black; */
+    top: -53.7rem;
+    overflow: hidden;
+    left: 93px;
+    z-index: -1;
+}
+
+#wire2{
+    top: -54.7rem;
+    overflow: hidden;
+    left: 51px;
+}
+#wire2::before{
+content: 'aaaaaaaaaaaa';
+position: absolute;
+top: -38px;
+left: -30px;
+font-size: 4em;
+color: transparent;
+text-decoration-style: wavy;
+text-decoration-color:#1b05dd ;
+text-decoration-line: underline;
+}
+.wire::before{
+
+    content: 'aaaaaaaaaaaaa';
+    position: absolute;
+    top: -38px;
+    left: -30px;
+    font-size: 4em;
+    color: transparent;
+    text-decoration-style: wavy;
+    text-decoration-color:#dd0505 ;
+    text-decoration-line: underline;
+}
+.side-wire{
+    height: 41px;
+    width: 7px;
+    background-color: #1b05dd;
+    position: relative;
+    top: -58rem;
+    left: 48px;
+    border-radius: 50px;
+    z-index: -1;
+}
+
+ /* .holls{
+    background-color: #ffeac4;
+} */
+    </style>
+</head>
+<body>
+<!-- Bulb -->
+    <div class="d1"></div>
+    <div class="d1" id="d2"></div>
+<!-- Aluminum-Bulb-Cap-->
+    <div class="d3"></div>
+<!-- Aluminum-Bulb-Cap-Wire-->
+    <div class="d4" id="bar"></div>
+    <div class="d4" id="bar"></div>
+    <div class="d4" id="bar"></div>
+<!-- Bulb-Conector -->
+    <div class="conector">
+        <div class="d5" id="conector"></div>
+        <div class="d5" id="conector"></div>
+    </div>
+<!-- Erase-circle -->
+    <div class="d6"></div>
+    <div class="d6" id="erase"></div>
+<!-- Switch-bord -->
+    <button type="button" id="btn">ON</button>
+    <div class="socket"></div>
+    <div class="holls" id="big-holl"></div>
+    <div class="buttom-holls">
+        <div class="holls"></div>
+        <div class="holls"></div>
+        <div id="btmholls">
+            <div class="holls"></div>
+            <div class="holls"></div>
+        </div>
+    </div>
+<!-- Wires -->
+<div class="wire"></div>
+<div class="wire" id="wire2"></div>
+<div class="side-wire"></div>
+
+    <!-- js -->
+     <script>
+        var a = document.querySelector("div");
+        console.log(a);
+        a.style.backgroundColor=" #ffeac4";
+        a.style.width="150px";
+        a.style.height="150px";
+        a.style.borderRadius="90px";
+        var b = document.querySelector("#d2")
+        var flag = 0
+
+        //EventListener
+        btn.addEventListener("click",function(){
+       if(btn == 0){
+        a.style.backgroundColor="#ffeac4";
+        console.log("calling")
+       }
+       else{
+        a.style.backgroundColor="orange";
+        console.log("off")
+        btn = 0
+       }
+     })
+
+     </script>
+</body>
+</html>
