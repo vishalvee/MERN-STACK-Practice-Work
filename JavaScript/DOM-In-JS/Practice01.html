@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-Practice-Questions</title>
+    <style>
+            
+        h1{
+            background-color: yellow;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 6px;
+            padding: 1rem;
+            border: 3px solid black;
+        }
+        h4{
+            text-decoration: underline;
+        }
+        .box{
+            width: 12%;
+            height: 60px;
+            background-color: black;
+            color: yellow;
+            font-size: 30px;
+            padding: 9px 30px;
+            border-radius: 10px;
+            margin: 8px 0px;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM_QUESTIONS</h1>
+    <!-- Question-1 Append Text-->
+    <h4>Q-1 Append Text</h4>
+    <h2>Hello Vishal</h2>
+
+    <!-- Question 2- create three div with same class and Access them & add some unique text to each of them. -->
+    <h4>Q-2 Create three div with same class and Access them & add some unique text to each of them.</h4>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+
+    <script>
+    //sol-1
+       var a= document.querySelector("h2");
+       a.innerText=a.innerText +" How are you?";
+
+    //sol-2
+    document.write("<hr>");
+        var b=document.querySelectorAll(".box");
+        console.log(b);
+        b[0].innerText="Unique val 1";
+        b[1].innerText="Unique val 2";
+        b[2].innerText="Unique val 3";
+
+    </script>
+
+
+</body>
+</html>
