@@ -66,5 +66,6 @@
 9.DOM-Properties-In-JS.<br>
 10.Selectors-In-DOM.<br>
 11.BULB-Project-In-DOM-With-Event-Listener.<br>
-12.DOM-Practice-Questions.
+12.DOM-Practice-Questions.<br>
+13.DOM-Attributes.
 
