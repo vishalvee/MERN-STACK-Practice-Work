@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-validation</title>
+    <style>
+table{
+    background-color: rgb(179, 233, 179);
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 24px 20px;
+    position: relative;
+    filter: blur(2px);
+   
+}
+table:hover{
+    filter: blur(0px);
+}
+
+input{
+    background-color: rgb(141, 197, 202);
+    color: white;
+    padding: 2px 4px;
+}
+
+.btn{
+    padding: 5px 20px;
+    position: relative;
+    left: 90px;
+    top: 16px;
+    border: 0px;
+    border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+    <table>
+        <form action="">
+<tr>
+    <td> <label for="name" >Name</label></td>
+    <td><input type="text"  id="n" placeholder="First Name"></td>
+        </tr>
+        <tr>
+            <td> <label for="gen">Gen</label></td>
+            <td><input type="radio" name="name" id="gen">male
+                <input type="radio" name="name" id="gen">female</td>
+        </tr>
+        <tr><td><label for="f-name">Father Name</label></td>
+        <td><input type="text" name="name" id="fn"></td></tr>
+        <tr>
+            <td> <label for="f-name">Mother Name</label></td>
+        <td><input type="text" name="name" id="mn"></td>
+    </tr>
+    <tr><td><input type="submit" value="Submit" onclick="ab()" class="btn"></td></tr>
+    <!-- <button type="button" onclick="ab()">kro</button> -->
+</form>
+    </table>
+   
+    <!-- js -->
+     <script>
+
+    function ab(){
+    console.log("helllo ji");
+    var n=document.getElementById("n").value;
+    if(n==""){
+        alert("enter your name");
+    }
+alert(n);
+    var gen=document.getElementById("gen").value;
+    if(gen==""){
+        alert("Select your gen");
+    }
+    alert(gen);
+    var fn=document.getElementById("fn").value;
+    if(fn==""){
+        alert("enter your father-name");
+    }
+    alert(fn);
+    var mn=document.getElementById("mn").value;
+    if(mn==""){
+        alert("enter your Mother-name");
+    }
+    alert(mn);
+    
+    }
+
+     
+     </script>
+</body>
+</html>

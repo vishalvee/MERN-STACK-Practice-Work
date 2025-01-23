@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        table {
+            background-color: rgb(179, 233, 179);
+            border: 2px solid white;
+            border-radius: 15px;
+            padding: 24px 20px;
+            position: relative;
+            filter: blur(2px);
+        }
+        table:hover {
+            filter: blur(0px);
+        }
+        input {
+            background-color: rgb(141, 197, 202);
+            color: white;
+            padding: 2px 4px;
+        }
+        .btn {
+            padding: 5px 20px;
+            position: relative;
+            left: 90px;
+            top: 16px;
+            border: 0px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <form action="javascript:void(0);">
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" id="n" placeholder="First Name"></td>
+            </tr>
+            <tr>
+                <td><label for="gen">Gender</label></td>
+                <td>
+                    <input type="radio" name="gender" id="male" value="Male"> Male
+                    <input type="radio" name="gender" id="female" value="Female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td><label for="f-name">Father's Name</label></td>
+                <td><input type="text" id="fn"></td>
+            </tr>
+            <tr>
+                <td><label for="m-name">Mother's Name</label></td>
+                <td><input type="text" id="mn"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Submit" onclick="validateForm()" class="btn"></td>
+            </tr>
+        </form>
+    </table>
+
+    <script>
+        function validateForm() {
+            // Regex patterns
+            const namePattern = /^[A-Za-z\s]{2,50}$/; // Letters and spaces, 2-50 characters
+            const genderSelected = document.querySelector('input[name="gender"]:checked'); // Check if any radio button is selected
+
+            // Field values     
+            const name = document.getElementById("n").value.trim();
+            const fatherName = document.getElementById("fn").value.trim();
+            const motherName = document.getElementById("mn").value.trim();
+
+            // Name validation
+            if (!namePattern.test(name)) {
+                alert("Please enter a valid name (only letters and spaces, 2-50 characters).");
+                return false;
+            }
+
+            // Gender validation
+            if (!genderSelected) {
+                alert("Please select your gender.");
+                return false;
+            }
+
+            // Father's name validation
+            if (!namePattern.test(fatherName)) {
+                alert("Please enter a valid father's name (only letters and spaces, 2-50 characters).");
+                return false;
+            }
+
+            // Mother's name validation
+            if (!namePattern.test(motherName)) {
+                alert("Please enter a valid mother's name (only letters and spaces, 2-50 characters).");
+                return false;
+            }
+
+            // Success message
+            alert("Form submitted successfully!");
+            console.log("Name:", name);
+            console.log("Gender:", genderSelected.value);
+            console.log("Father's Name:", fatherName);
+            console.log("Mother's Name:", motherName);
+        }
+    </script>
+</body>
+</html>
