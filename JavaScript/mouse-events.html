@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse-Events</title>
+    <style>
+        .d1{
+            width: 80px;
+            height: 80px;
+            border: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="d1"></div>
+    
+    <script>
+        let btn=document.querySelector(".d1");
+        btn.onmouseenter=()=>{
+            console.log("ckiled");
+        }
+    </script>
+</body>
+</html>
