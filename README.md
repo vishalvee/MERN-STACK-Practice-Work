@@ -70,4 +70,5 @@
 13.DOM-Attributes.<br>
 14.Dark-Mode-In-JS.<br>
 15.Form-Validation-In-JS.<br>
-16.Event-Listener-In-JS.
+16.Event-Listener-In-JS.<br>
+17.Events-Part02-In-DOM.
