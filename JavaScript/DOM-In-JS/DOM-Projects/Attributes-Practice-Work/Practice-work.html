@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Work</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        p{
+            padding: 2rem;
+            background-color: yellow;
+            word-spacing:4px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+  <p> Que 01-Create a new button element.Give it a text "Click Me",background Color of red & text color of white.
+    Insert the button as the First element inside the body tag.</p>
+    <script>
+        //01 Creating an element
+        let btn=document.createElement("button")
+        btn.innerText="Click Me"
+        //02 styling through js
+        btn.style.backgroundColor="red"
+        btn.style.color="white"
+        btn.style.padding="10px 40px"
+        btn.style.fontSize="25px"
+        //03 Display inside the body ( on document page)
+        let b=document.querySelector("body")
+        b.append(btn)
+    </script>
+</body>
+</html>
