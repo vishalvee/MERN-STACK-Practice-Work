@@ -72,4 +72,6 @@
 15.Form-Validation-In-JS.<br>
 16.Event-Listener-In-JS.<br>
 17.Events-Part02-In-DOM.<br>
-18.Attributes-Practice-Work.
+18.Attributes-Practice-Work.<br>
+19.Arithmetic-Operator-In-JS.
+
