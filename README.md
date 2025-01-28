@@ -73,5 +73,6 @@
 16.Event-Listener-In-JS.<br>
 17.Events-Part02-In-DOM.<br>
 18.Attributes-Practice-Work.<br>
-19.Arithmetic-Operator-In-JS.
+19.Arithmetic-Operator-In-JS.<br>
+20.Assignment-Operators-In-JS.
 
