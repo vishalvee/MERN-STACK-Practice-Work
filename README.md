@@ -74,5 +74,7 @@
 17.Events-Part02-In-DOM.<br>
 18.Attributes-Practice-Work.<br>
 19.Arithmetic-Operator-In-JS.<br>
-20.Assignment-Operators-In-JS.
+20.Assignment-Operators-In-JS.<br>
+21.Basic-Calculator-Style.<br>
+22.Logical-Operator-In-JS.
 
