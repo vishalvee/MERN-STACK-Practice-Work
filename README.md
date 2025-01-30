@@ -76,5 +76,6 @@
 19.Arithmetic-Operator-In-JS.<br>
 20.Assignment-Operators-In-JS.<br>
 21.Basic-Calculator-Style.<br>
-22.Logical-Operator-In-JS.
+22.Logical-Operator-In-JS.<br>
+23.For-Loop-In-JS.
 
