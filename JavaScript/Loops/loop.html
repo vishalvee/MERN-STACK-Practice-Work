@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>loop</title>
+  </head>
+  <body>
+    <h1 style="padding: 2rem; background-color: yellow; text-align: center; text-transform: uppercase;">Loops-In-Js</h1>
+    <p>(For-Loop)</p>
+    <script>
+      // this run from 0 to 10
+      // increment
+      document.write("<h1>Increment-Loop</h1>");
+      let a;
+      for (a = 0; a <= 10; a++) {
+        document.write(a + "<br>");
+      }
+      document.write("<hr>");
+      // decrement
+      document.write("<h1>Decrement-Loop</h1>");
+      let b;
+      for (b = 10; b >= 0; b--) {
+        document.write(b + "<br>");
+      }
+
+      //Table of Two
+
+      document.write("<hr>");
+      document.write("<h1>Table of TWO</h1>");
+      let c;
+      for (c = 1; c <= 10; c++) {
+        document.write("2 x " + c + " = " + 2 * c + "<br>");
+      }
+
+      //star
+      document.write("<hr>");
+      document.write("<h1>Star-in-Row and Colunm</h1>");
+      let f;
+      //outer loop
+      for (f = 0; f <= 5; f++) {
+        //inner loop
+        for (g = 1; g <= 5; g++) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+
+      //star
+      document.write("<hr>");
+      //IN pyramid
+      document.write("<h1>Star-Pyramid</h1>");
+      let h;
+      //outer loop
+      for (h = 0; h <= 5; h++) {
+        //inner loop
+        for (i = 1; i <= h; i++) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+    </script>
+  </body>
+</html>
