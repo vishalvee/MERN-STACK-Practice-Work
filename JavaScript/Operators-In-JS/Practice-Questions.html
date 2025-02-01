@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic-Calculations</title>
+</head>
+<style> 
+    h3{
+        background-color: yellow;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 2rem;
+    }
+</style>
+<body>
+    
+    <h3>Write a program that takes two numbers from the user and performs all arithmetic operations.</h3>
+    <script>
+        document.write("<h2>Arithmetic</h2>");
+        var a=Number(prompt("Enter the First value"));
+        var b=Number(prompt("Enter the second value"));
+        document.write("<br>");
+        let add=a+b;//add
+        let s=a-b;//subtract
+        let m=a*b;//multiply
+        let d=a/b;//divide
+        let mo=a%b;//modulus
+        let ex=a**b;//power
+
+        document.write(`Addition of number:${a}+${b}=${add}`);
+        document.write("<br>");
+        document.write(`Subtraction of number:${a}-${b}=${s}`);
+        document.write("<br>");
+        document.write(`Multiplication of number:${a}*${b}=${m}`);
+        document.write("<br>");
+        document.write(`Division of number:${a}/${b}=${d}`);
+        document.write("<br>");
+        document.write(`Modulus of number:${a}%${b}=${mo}`);
+        document.write("<br>");
+        document.write(`Exponentiation of number:${a}**${b}=${ex}`);
+
+
+        
+        /*-------------For Separate calculations------------------
+
+         document.write("<h2>Subtraction</h2>")
+         var ab=Number(prompt("enter the first value"))
+         var cd=Number(prompt("ENter the second value"))
+         let minus=ab-cd;
+         document.write(`Subtraction: ${ab}-${cd}=${minus}`)
+
+
+         document.write("<h2>Multiplication</h2>")
+         var m=Number(prompt("Multiply value A"));
+         var n=Number(prompt("multiply value B"));
+         document.write("<br>")
+         let mul=m*n;
+         document.write(`Multiply:${m}*${n}=${mul}`)
+         */
+    </script>
+</body>
+</html>
