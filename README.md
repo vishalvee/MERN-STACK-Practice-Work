@@ -78,6 +78,8 @@
 21.Basic-Calculator-Style.<br>
 22.Logical-Operator-In-JS.<br>
 23.For-Loop-In-JS.<br>
-24.Loops-Practice-Questions.
+24.Loops-Practice-Questions.<br>
+25.Atirthmetic-Practice-Questions.
+
 
 
