@@ -79,7 +79,8 @@
 22.Logical-Operator-In-JS.<br>
 23.For-Loop-In-JS.<br>
 24.Loops-Practice-Questions.<br>
-25.Atirthmetic-Practice-Questions.
+25.Atirthmetic-Practice-Questions.<br>
+26.Comparison-Operators-In-JS.
 
 
 
