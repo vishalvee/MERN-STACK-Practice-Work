@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison Operators</title>
+</head>
+<body>
+    <script>
+        // Declare two variables
+let a = 10;
+let b = 5;
+let c = "10";
+
+console.log("a =", a, ", b =", b, ", c =", c);
+
+// Equal to (==) [Checks only value]
+console.log("a == c:", a == c); // true (because "10" is converted to 10)
+
+// Strict equal to (===) [Checks value & type]
+console.log("a === c:", a === c); // false (because types are different)
+
+// Not equal to (!=)
+console.log("a != b:", a != b); // true
+
+// Strict not equal to (!==)
+console.log("a !== c:", a !== c); // true (because types are different)
+
+// Greater than (>)
+console.log("a > b:", a > b); // true
+
+// Less than (<)
+console.log("a < b:", a < b); // false
+
+// Greater than or equal to (>=)
+console.log("a >= 10:", a >= 10); // true
+
+// Less than or equal to (<=)
+console.log("b <= 5:", b <= 5); // true
+
+    </script>
+</body>
+</html>
