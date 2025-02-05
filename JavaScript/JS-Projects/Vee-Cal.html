@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator-by-vee</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            overflow: hidden;
+        }
+        .calculator {
+            background-color: rgb(29, 30, 33);
+            padding: 5px 1px 5px 5px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+        table {
+            border-spacing: 5px;
+        }
+         #res {
+            width: 100%;
+            height: 50px;
+            font-size: 24px;
+            text-align: right;
+            border-radius: 5px;
+            border: none;
+            padding: 10px 0px;
+        }
+        input[type="button"] {
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        input[type="button"]:hover {
+            background-color: #ddd;
+        }
+        .operator {
+            background-color: rgb(97, 96, 95);
+            color: white;
+        }
+        #ac{
+            background-color: rgb(240, 42, 3);
+            color: white;
+        }
+        .equal {
+            background-color: green;
+            color: white;
+        }
+        #del{
+            background-color: rgb(228, 186, 0);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <form name="myForm">
+            <table>
+                <tr>
+                    <td colspan="4"><input type="text" name="display" id="res" ></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="AC" class="operator" id="ac" onclick="document.myForm.display.value=''"><!--for clear all--> 
+                    </td>
+                    <td><input type="button" value="()" class="operator" onclick="ab('()')"></td>
+                    <td><input type="button" value="%" class="operator" onclick="ab('%')"></td>
+                    <td><input type="button" value="/" class="operator" onclick="ab('/')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" onclick="ab('7')"></td>
+                    <td><input type="button" value="8" onclick="ab('8')"></td>
+                    <td><input type="button" value="9" onclick="ab('9')"></td>
+                    <td><input type="button" value="X" class="operator" onclick="ab('*')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" onclick="ab('4')"></td>
+                    <td><input type="button" value="5" onclick="ab('5')"></td>
+                    <td><input type="button" value="6" onclick="ab('6')"></td>
+                    <td><input type="button" value="-" class="operator" onclick="ab('-')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" onclick="ab('1')"></td>
+                    <td><input type="button" value="2" onclick="ab('2')"></td>
+                    <td><input type="button" value="3" onclick="ab('3')"></td>
+                    <td><input type="button" value="+" class="operator" onclick="ab('+')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="0" onclick="ab('0')"></td>
+                    <td><input type="button" value="." onclick="ab('.')"></td>
+                    <td><input type="button" value="DEL" class="operator" onclick="back()" id="del"></td>
+                    <td><input type="button" value="=" class="equal" onclick="eq()"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script>
+        function ab(num){
+            //document.(form-name).(display-screen-name).(value)
+            document.myForm.display.value= document.myForm.display.value + num;
+            console.log("click");
+        }
+        //for equal
+        function eq(){
+            var ans = document.myForm.display.value;
+            document.myForm.display.value = eval(ans);
+        }
+
+        //for backspace
+        function back() {
+        var b = document.myForm.display.value;
+        document.myForm.display.value = b.substr("0", b.length - 1);
+      }
+    </script>
+
+
+</body>
+</html>
