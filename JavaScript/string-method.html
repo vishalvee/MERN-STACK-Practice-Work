@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>string methods</title>
+  </head>
+  <body>
+    <script>
+      let a = "vishal";
+      let b = "VEE";
+      let c =
+        "                                          chand                                ";
+
+      document.write(a.toUpperCase());
+      document.write(b.toLowerCase());
+      document.write(c.length);
+      var ab = c.trim();
+
+      document.write(ab.length);
+
+      document.write("<br>")
+      document.write("<hr>")
+
+      //string slice
+      document.write("<br>")
+      var str="california"
+      document.write("california")
+      document.write(str.slice(2,5))
+      document.write("<br>")
+      document.write(str.slice(3,7))
+      document.write("<br>")
+      document.write("<hr>")
+      
+      //string concat
+       var message="hello";
+       var name="vee";  
+       document.write(message.concat(name))
+       document.write("<br>")
+
+       //string Replace
+
+       var ac="hi hi hi guys";
+        document.write(ac.replace("hi","bye"))
+        document.write("<br>")
+        document.write(ac.replaceAll("hi","good"))
+        document.write("<br>")
+        document.write("<hr>")
+
+        //chrachterAt
+
+        let st="vishal"
+        document.write(st.charAt(3))
+        document.write("<br>")
+        document.write("<hr>")
+
+
+    </script>
+  </body>
+</html>
