@@ -84,7 +84,8 @@
 26.Comparison-Operators-In-JS.<br>
 27.For-Off-For-In-And-Break-Continue-In-JS.<br>
 28.Calculator-Project-By-Vee-In-JS.<br>
-29.String-Functions-In-JS.
+29.String-Functions-In-JS.<br>
+30.Prompt-And-Vowel-In-Array-JS.
 
 
 
