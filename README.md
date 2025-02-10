@@ -85,7 +85,8 @@
 27.For-Off-For-In-And-Break-Continue-In-JS.<br>
 28.Calculator-Project-By-Vee-In-JS.<br>
 29.String-Functions-In-JS.<br>
-30.Prompt-And-Vowel-In-Array-JS.
+30.Prompt-And-Vowel-In-Array-JS.<br>
+31.Array-And-Methods-In-JS.
 
 
 
