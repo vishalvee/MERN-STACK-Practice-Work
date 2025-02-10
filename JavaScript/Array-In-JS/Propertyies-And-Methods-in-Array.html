@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property-And-Methods-in-Array</title>
+</head>
+<body>
+    <script>
+        document.write("<h1>Property-And-Methods</h1>")
+        document.write("<hr>")
+        var hero=["Iron-man","Rocket","Spiderman"];
+        document.write(hero)
+        document.write("<br>")
+        document.write("<br>")
+        //01 .length Property (The length property returns the number of elements in an array.)
+        document.write("Total Lenght of Hero array is: " +hero.length)
+        document.write("<br>")
+        document.write("<hr>")
+        //02 push() Method (Adds one or more elements to the end of an array and returns the new length.)
+        console.log(hero.push("Groot"))
+        document.write(hero)
+        document.write("<br>")
+        document.write("<hr>")
+        //03 pop() Method (Removes the last element from an array and returns that element.)
+        console.log(hero.pop())
+        document.write(hero)
+        document.write("<br>")
+        document.write("<hr>")
+        //04 Unshif() Method (Adds one or more elements to the beginning of an array and returns the new length.)
+       var a= hero.unshift("Thor")
+       document.write(hero)//it print array
+       document.write("&nbsp &nbsp")
+        document.write(a)//it print length of array
+        document.write("<br>")
+        document.write("<hr>")
+        //05 Shift() Method (Removes the first element from an array and returns that element.)
+        hero.shift()
+        document.write(hero)
+        document.write("<br>")
+        document.write("<hr>")
+        //06 indexOf() Method (Returns the index of the first occurrence of a specified element in an array. If the element is not found, it returns -1.)
+        var inx=hero.indexOf("Iron-man")
+        document.write(inx)
+        document.write("<br>")
+        document.write(hero.indexOf("Groot"))
+        document.write("<br>")
+        document.write("<hr>")
+        //07 Includes() Method (Checks if an array contains a specified element. Returns true if found, otherwise false.)
+        document.write(hero.includes("Rocket"))
+        document.write("<br>")
+        document.write("<hr>")
+        //08 Slice() Method (Returns a shallow copy of a portion of an array into a new array. It takes two arguments: the start index (inclusive) and the end index (exclusive).)
+       var sl= document.write(hero.splice(0,2))
+       document.write(sl)
+       document.write("<br>")
+       document.write("<hr>")
+
+       /*09  splice() Method
+        Adds or removes elements from an array at a specific index. 
+
+        It takes three arguments:
+        1.Start index.
+        2.Number of elements to remove.
+        3.Elements to add (optional).*/
+        hero.splice(1,1,"thor");
+        document.write(hero)
+        document.write("<br>")
+        document.write("<hr>")
+        
+        //10 Concat() Method (Combines two or more arrays and returns a new array.)
+        let newhero=["Shaktiman","Krish","FlyingJatt","Mr.India"]
+        let allhero=hero.concat(newhero);
+        document.write(allhero)
+
+
+
+    </script>
+</body>
+</html>
