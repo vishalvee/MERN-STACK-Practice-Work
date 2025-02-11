@@ -86,7 +86,8 @@
 28.Calculator-Project-By-Vee-In-JS.<br>
 29.String-Functions-In-JS.<br>
 30.Prompt-And-Vowel-In-Array-JS.<br>
-31.Array-And-Methods-In-JS.
+31.Array-And-Methods-In-JS.<br>
+32.Flate-And-Sort-In-JS.
 
 
 
