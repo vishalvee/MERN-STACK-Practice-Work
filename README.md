@@ -87,7 +87,8 @@
 29.String-Functions-In-JS.<br>
 30.Prompt-And-Vowel-In-Array-JS.<br>
 31.Array-And-Methods-In-JS.<br>
-32.Flate-And-Sort-In-JS.
+32.Flate-And-Sort-In-JS.<br>
+33.Oops-And-Prototype-In-JS.
 
 
 
