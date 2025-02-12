@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+</head>
+<body>
+<script>
+    //Prototype (open console and then check below the array )
+    fruit=["apple","kiwi","orange","chikkoo",[60,50,7],88,9]
+   document.write(fruit)
+    //object
+    const stu={
+        fullName:"vee",
+        marks:206,
+        printMarks:function(){
+        document.write("marks:",this.marks);
+        }
+    }
+    console.log(stu.printMarks())
+
+
+    //PROTOTYPE
+    let emp={
+        calTax(){
+            console.log("tax rate is 10%:")
+        }
+    };
+    let newemp={
+        salary:5000
+    };
+    let newemp1={
+        salary:7000
+
+    };
+    newemp.__proto__=emp;
+    newemp1.__proto__=emp;
+    console.log(newemp.salary);
+    console.log(newemp.calTax());
+    console.log(newemp1.salary);
+    console.log(newemp1.calTax());
+
+</script>
+</body>
+</html>

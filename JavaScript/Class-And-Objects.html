@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASS-AND-OBJETS</title>
+</head>
+<body>
+<script>
+    //class and objects
+    //class is a blueprint for creating objects
+    //objects are instances of class
+    //class is a template
+    //objects are real entities
+    //class is a logical entity
+    // what is inditation
+
+class toyotacar{
+    start(){
+        console.log("car is starting");
+    }
+    stop(){
+        console.log("car is stopping");
+    }
+
+}
+let car1=new toyotacar();
+car1.start();
+car1.stop();
+let car2=new toyotacar();  
+car2.start();
+
+
+//constructor
+class toyotacar1{
+    constructor(brand,milege){
+        this.brand=brand;
+        this.milege=milege;
+    }
+    start(){
+        console.log("car is starting");
+    }
+    stop(){
+        console.log("car is stopping");
+    }
+
+}
+let car3=new toyotacar1("toyota",20);
+console.log(car3);
+
+</script>
+</body>
+</html>
