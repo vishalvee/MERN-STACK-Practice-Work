@@ -90,5 +90,6 @@
 32.Flate-And-Sort-In-JS.<br>
 33.Oops-And-Prototype-In-JS.<br>
 34.Error-Handing-In-JS.<br>
-35.Spread-Operator-In-JS.
+35.Spread-Operator-In-JS.<br>
+36.Rest-Operator-In-JS.
 
