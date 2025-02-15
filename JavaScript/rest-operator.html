@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest-Operator</title>
+</head>
+<body>
+    <script>
+        //Rest is use to collect Multiple elements into single array or object
+        //01 example
+        let item=["Book","Shirt","Pant","T-shits"];
+        let [fistitem, ...cloths]=item //it will pack "Book" in one box and "cloths" in other box (from a single "item" array)
+        console.log(fistitem);
+        console.log(cloths)
+
+
+        //pahle jo item chahiye usse pahle print kr dega and fir Last me Baaki jo bach gaye o waale agal.
+        //02 example
+        let pizza=[1,2,3,4,5,6,7,8];
+        const [slies1,slies2, ...sliesAll]=pizza
+        console.log(slies1)
+        console.log(slies2)
+        console.log(sliesAll)
+
+        //03 example
+        let students=["ram","sham","seeta","geeta","bat","ball"]
+        let[boy1,boy2,girl1,girl2,...toys]=students
+        console.log(boy1);
+        console.log(boy2);
+        console.log(girl1);console.log(girl2);
+        console.log(toys);
+
+
+//---------------------------------------------------------------------------------------------
+        //01 Rest-In-Function
+        //Agar aapko nhi pta ki fuction ko kitni arguments (values) milegi.
+
+        function TotalBill(...bills){
+            let total=0;
+            for (let bill of bills){
+                total+=bill;
+            }
+            return total;
+        }
+        console.log(TotalBill(12,34,4))
+
+
+        //02 Run in one over
+        function Runs(...runs){
+            let scores=0;
+            for(let run of runs){
+                scores+=run;
+            }
+            return scores;
+
+        }
+        console.log("The Scores in One Over "+ Runs(4,4,2,1,6,0))
+
+        //03 Example
+        function Shop(...bill){
+            let Rate=0;
+            for (const price of bill) {
+                Rate+=price;
+                
+            }
+            return Rate;
+        }
+        console.log("Total Price of Product "+Shop(200,43,300,350))
+    </script>
+</body>
+</html>
