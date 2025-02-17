@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<body>
+    <script>
+        function hello()
+        {
+            console.log("hello")
+        }
+
+        setTimeout(hello,3000)
+        console.log("one")
+        console.log("two")
+        setTimeout(()=>{
+            console.log("hello")
+        },2000)
+
+        console.log("three")
+        console.log("four")
+
+        //Callback function
+        //A callback is a function passed as an argument to another function
+        //it is also rise a problem called callback hell
+        //callback hell is a situation where the code is difficult to read and manage due to nested callbacks
+        //nested callbacks are callbacks inside callbacks inside callbacks
+        
+         
+        function getData(DataID){
+            setTimeout(()=>{
+                console.log("Fetching data from database",DataID)
+
+            },2000)
+        }
+        getData(1)
+        getData(2)
+        getData(3)
+
+
+        function getData(Data,getNextData){
+            setTimeout(()=>{
+                console.log("Fetching data from database",Data)
+               if(getNextData){
+                getNextData();
+               }
+            },2000);
+        }
+            getData(1,()=>{
+                getData(2,()=>{
+                    getData(3,()=>{
+                        getData(4);
+                    });
+                });
+            });
+
+        
+    </script>
+
+</body>
+</html>
