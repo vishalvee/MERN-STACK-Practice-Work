@@ -95,4 +95,5 @@
 37.Conditions-In-JS.<br>
 38.Sync-Async-In-JS.<br>
 39.Promises-In-JS.<br>
-40.Promises-Chaining -And-Await-Ascync-In-JS.
+40.Promises-Chaining -And-Await-Ascync-In-JS.<br>
+41.Async-and-Destructin-In-ES6-JS.
