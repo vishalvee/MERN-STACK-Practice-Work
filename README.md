@@ -1,4 +1,4 @@
-;# Practice Work Of MERNSTACK
+# Practice Work Of MERNSTACK
 
 1️⃣HTML-(Hypertext Markup Language)
 <hr>
@@ -96,4 +96,5 @@
 38.Sync-Async-In-JS.<br>
 39.Promises-In-JS.<br>
 40.Promises-Chaining -And-Await-Ascync-In-JS.<br>
-41.Async-and-Destructin-In-ES6-JS.
+41.Async-and-Destructin-In-ES6-JS.<br>
+42.Destructing-2-In-JS.
