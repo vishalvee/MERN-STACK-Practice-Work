@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date-Object-js</title>
+</head>
+<body>
+    <script>
+        //Date() It show current date-and-time of Pc
+        console.log(new Date());
+        let x=new Date(2025,1,22);
+        //Methods of Date (.get)
+        //check year
+        console.log(x.getFullYear());
+        //check month
+        console.log(x.getMonth())
+        //check date
+        console.log(x.getDate());
+        //check day
+        console.log(x.getDay());
+        
+        //.set (change or modify date formate)
+
+        let y=new Date("oct 13,2018 11:12:33");//old year 2018
+        y.setFullYear(2025);
+        console.log(y);//updated year 2025
+
+        y.setDate(22);
+        y.setMonth(1)//1 is for Feb (months start from 0 to 11 )
+        console.log(y);
+
+
+
+
+        //Q if you want to know which day will be after 50 days
+
+        //sol
+        let z=new Date();
+        z.setDate((z.getDate()+50));// This will show the date and day after 50 days
+        console.log(z);
+
+
+    </script>
+</body>
+</html>
