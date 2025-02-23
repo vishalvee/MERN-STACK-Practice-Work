@@ -98,5 +98,6 @@
 40.Promises-Chaining -And-Await-Ascync-In-JS.<br>
 41.Async-and-Destructin-In-ES6-JS.<br>
 42.Destructing-2-In-JS.<br>
-43.Date-Operator-In-JS.
+43.Date-Operator-In-JS.<br>
+44.Prototype-In-JS.
 
