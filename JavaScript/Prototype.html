@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+</head>
+<body>
+    <script>
+        //custruction function
+        function Student(name, age, roll){
+            this.name = name;
+            this.age = age;
+            this.roll = roll;
+        }
+        const a= new Student("vishal",24,202)
+        console.log(a)
+        
+
+
+        //Cars
+        function Car(Brand,color,price){
+            this.Brand=Brand;
+            this.color=color;
+            this.price=price;
+        }
+        let details=new Car("bmw","white","100lakh")
+        console.log(details)
+
+        //Q2  
+        function Fruit(name){
+            this.name=name;
+        }
+        //prototype function
+        Fruit.prototype.fun=function(){
+            return `${this.name} is a Fruit`
+        } 
+        let fruit=new Fruit("Apple");
+        console.log(fruit)
+        
+    </script>
+</body>
+</html>

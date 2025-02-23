@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object.create Method</title>
+</head>
+<body>
+    <script>
+        //object.create method
+
+        let protoObj={
+            es:6
+        }
+        const newObj=Object.create(protoObj)
+        console.log(newObj)
+// ---------------------------------------------------------------
+        //accessing prototype
+        console.log(newObj.es);
+        //__proto__
+        console.log(newObj.__proto__)
+        //object.getPropertyOf
+        console.log(Object.getPrototypeOf(newObj))
+
+//----------------------------------------------------------------
+        //modify or update property of prototype
+
+       // syntax
+       //  console.log(Object.setPrototypeOf(old-object, new-object))
+
+       let protoObject={
+        es:6
+       }
+       const newobject= Object.create(protoObject)
+
+       let newProtoObject={
+        es:15
+       }
+       console.log(Object.setPrototypeOf(protoObject,newProtoObject))
+       
+
+
+
+    </script>
+</body>
+</html>
