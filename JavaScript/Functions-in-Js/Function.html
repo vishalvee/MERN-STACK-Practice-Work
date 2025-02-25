@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        function email(name){
+            document.write(`Hi,${name},How are you?`);
+            document.write("<br>")
+        }
+        email("vee")
+
+
+        //fuction expresstion (function is store in variable)
+         let  greet=function(name){
+            document.write(`${name},What are you Doing?`);
+            document.write("<br>")
+         }
+         greet("vishal")
+
+         //arrow function
+         let arrow=(name)=>{
+            return`This is an arrow function ${name}`
+         }
+        document.write(arrow("man"))
+        document.write("<br>")
+
+         //if only one paramenter and single statement to print than don't use () and {}.
+        let arrow1=name=>`These is a short syntax of arrow ${name}`;
+        document.write(arrow1("Bro"))
+        document.write("<br>")
+
+    </script>
+</body>
+</html>
