@@ -99,5 +99,6 @@
 41.Async-and-Destructin-In-ES6-JS.<br>
 42.Destructing-2-In-JS.<br>
 43.Date-Operator-In-JS.<br>
-44.Prototype-In-JS.
+44.Prototype-In-JS.<br>
+45.Complete-Function-With (ES06-Arrow-Function).
 
