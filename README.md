@@ -100,5 +100,7 @@
 42.Destructing-2-In-JS.<br>
 43.Date-Operator-In-JS.<br>
 44.Prototype-In-JS.<br>
-45.Complete-Function-With (ES06-Arrow-Function).
+45.Complete-Function-With (ES06-Arrow-Function).<br>
+46.Error-Handling-In-JS.
+
 
