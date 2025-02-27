@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback-Function</title>
+</head>
+<body>
+    <script>
+        //Example 01
+        function A(callback){
+            console.log("This is A function");
+            callback();
+        }
+        function B(){
+            console.log("this is Function B");
+        }
+        //calling function
+        A(B)
+
+        //Example 02 
+        //Parameters-and-Function-Together...
+        let a;
+        let b;
+        function First(a,b,Call){
+           let c=a+b;
+            console.log(`Addition of A and B is:${c}`)
+            Call()
+        }
+        function sec(){
+            console.log("This is Second function (Callback)")
+        }
+        First(3,4,sec)
+    </script>
+</body>
+</html>
