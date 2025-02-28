@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise-in-js</title>
+</head>
+<body>
+    <script>
+    let myPromise = new Promise((resolve, reject) => {
+    let success = true;
+
+    setTimeout(() => {
+        if (success) {
+            resolve("Success! Data Received");
+        } else {
+            reject("Error! Something went wrong");
+        }
+    }, 2000);
+});
+
+// Handling the promise
+myPromise
+    .then((message) => {
+        console.log(message); 
+    })
+    .catch((error) => {
+        console.log(error);
+    })
+    .finally(() => {
+        console.log("Process Completed!"); // Runs always
+    });
+
+    </script>
+</body>
+</html>
