@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async-Await-function</title>
+</head>
+<body>
+        <script>
+            //async-fun() kewal promise return (automatically) krne ke liye hota hai.
+            //kisi bhi function ke aage "async" likh do to wo async fun() ban jata hai and fir hm .then() use kr skte hai.
+
+            //01.async example
+            async function greet(name){
+                    return `Hello ${name}`;
+                }
+                console.log(greet("vee"))//normal argument passing;
+                greet("raaj").then(console.log)//using .then() method
+
+            //await keyword hai jo promise ka result return hone tk wait krta hai.
+            //await kewal asyn fun() ke ander chalta hai.
+            //isme .then() chaining nahi likhna padta.
+            
+            //02.await example
+            //promise function
+             function promiseData(){
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                        resolve("✅ Promise Resolved!");
+                    }, 2000);
+                });
+            }
+            //async function
+            async function greeting(name){
+                console.log(`Hello${name}`);
+                let data=await promiseData();// using await
+                console.log(data);
+            }
+            greeting("Vishal Hai?")
+
+
+        </script>
+</body>
+</html>
