@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic of API</title>
+</head>
+<body>
+    <script>
+        //API (Application Programming Interface) ek medium hai jo do applications ko communicate karne me madad karta hai. JavaScript me API ka use server se data fetch karne, database se interact karne, aur external services ko access karne ke liye hota hai.
+
+
+        //syntax 
+        //javaScript me API call karne ke liye hum fetch() method aur async/await ka use karte hain
+        
+        //Example with Async/Await
+         async function getWeather(city) {
+        try {
+            const apiKey = "xyz-api-key"; // Tumhari API Key yahan daalo
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+            
+            let response = await fetch(url); // API Call
+            let data = await response.json(); // JSON me Convert
+    
+            if (response.ok) {
+                console.log(`🌤️ Weather in ${data.name}: ${data.main.temp}°C`);
+            } else {
+                console.log(`❌ Error: ${data.message}`);
+            }
+        } catch (error) {
+            console.log("⚠️ API Fetch Error:", error);
+        }
+    }
+    
+    // Example Call
+    getWeather("Chandigarh");
+    
+    </script>
+   
+</body>
+</html>
