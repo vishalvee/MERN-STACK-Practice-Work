@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different API Methods using fetch()</title>
+</head>
+<body>
+    <script>
+    // GET Request (Fetching Data)
+    fetch("https://api.example.com/data")
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.log("Error:", error));
+
+    // POST Request (Sending Data)
+    fetch("https://api.example.com/data", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: "Vee", age: 23 })
+    })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.log("Error:", error));
+
+    </script>
+</body>
+</html>
