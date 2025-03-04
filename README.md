@@ -105,7 +105,8 @@
 47.CallBack-Function-In-JS.<br>
 48.Promise-In-JS.<br>
 49.Async&Await-Function-In-JS.<br>
-50.API-In-JS.
+50.API-In-JS.<br>
+51.Different-API-Methods-using-fetch()-In-JS.
 
 
 
