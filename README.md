@@ -106,7 +106,9 @@
 48.Promise-In-JS.<br>
 49.Async&Await-Function-In-JS.<br>
 50.API-In-JS.<br>
-51.Different-API-Methods-using-fetch()-In-JS.
+51.Different-API-Methods-using-fetch()-In-JS.<br>
+52.Api-Authentication-In-JS.
+
 
 
 
